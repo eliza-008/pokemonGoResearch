@@ -14,8 +14,7 @@ response.raise_for_status()  # Raise an error if request fails
 # filter data
 soup = BeautifulSoup(response.text, "html.parser")
 table = soup.find("table", class_="data-table")
-
-# Extract Pokémon names and types
+# extract pokemon names and types
 pokemon_data = []
 
 # read table
