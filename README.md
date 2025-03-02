@@ -1,4 +1,9 @@
 # pokemonGoResearch
-some websites with information that might prove useful
-https://www.serebii.net/pokemongo/moves.shtml
-https://github.com/pokemon-go-api/pokemon-go-api , also good reosurce??
+BC Math Club Research
+Notes (Courtesy of Gianna): https://github.com/Patrick5225/pokemon-go-math-model
+Python Libraries used
+Pandas
+Numpy
+BeautifulSoup4
+Requests
+Csv
