@@ -33,6 +33,7 @@ for row in rows[1:]:                                          # Skipping the hea
     if len(columns) >= 2:                                     # Need at least the move and its ID number
         moveName = columns[1].get_text(strip=True)            # Move name (2nd column)
         moveID = columns[0].get_text(strip=True)              # ID number (1st column)
+        moveType = columns[2].get_text(strip=True)            # Move type (3rd column)
 
         gymPower = columns[3].get_text(strip=True)            # Power (Gym/Raid) (4th column)
         gymEnergyCost = columns[4].get_text(strip=True)       # Energy cost (Gym/Raid) (5th column)
@@ -48,6 +49,7 @@ for row in rows[1:]:                                          # Skipping the hea
             # Reformat for CSV, but print out results for now
             print(f"""Move: {moveName},
                       ID: {moveID}, 
+                      Type: {moveType},
                       Power (Gym/Raid): {gymPower}, 
                       Energy (Gym/Raid): {gymEnergyCost}, 
                       Power (vs Trainer): {trainerPower}, 
