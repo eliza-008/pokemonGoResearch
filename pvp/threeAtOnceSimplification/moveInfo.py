@@ -30,29 +30,30 @@ for row in rows[1:]:                                          # Skipping the hea
     columns = [td for td in row.find_all("td") if "min-height" and "background-color" not in td.get("style", "")] 
 
 
-    if len(columns) >= 6:                                     # Ensure there are enough columns (some may be headers)
+    if len(columns) >= 2:                                     # Need at least the move and its ID number
         moveName = columns[1].get_text(strip=True)            # Move name (2nd column)
         moveID = columns[0].get_text(strip=True)              # ID number (1st column)
 
-        gymPower = columns[3].get_text(strip=True)            # Power (Gym/Raid)
-        gymEnergyCost = columns[4].get_text(strip=True)       # Energy cost (Gym/Raid)
+        gymPower = columns[3].get_text(strip=True)            # Power (Gym/Raid) (4th column)
+        gymEnergyCost = columns[4].get_text(strip=True)       # Energy cost (Gym/Raid) (5th column)
             
-        trainerPower = columns[8].get_text(strip=True)        # Power (Trainer)
-        trainerEnergyCost = columns[9].get_text(strip=True)   # Energy cost (Trainer)
+        trainerPower = columns[8].get_text(strip=True)        # Power (Trainer) (9th column)
+        trainerEnergyCost = columns[9].get_text(strip=True)   # Energy cost (Trainer) (10th column)
 
-        statModifier = columns[10].get_text(strip=True)       # Stat modifier
-        statChance = columns[11].get_text(strip=True)         # Stat chance
+        statModifier = columns[10].get_text(strip=True)       # Stat modifier (11th column)
+        statChance = columns[11].get_text(strip=True)         # Stat chance (12th column)
         
         if moveName and moveID:                               # Check to make sure they're not empty (some values are)
 
+            # Reformat for CSV, but print out results for now
             print(f"""Move: {moveName},
-                    ID: {moveID}, 
-                    Power (Gym/Raid): {gymPower}, 
-                    Energy (Gym/Raid): {gymEnergyCost}, 
-                    Power (vs Trainer): {trainerPower}, 
-                    Energy (vs Trainer): {trainerEnergyCost},
-                    Stat Modifier: {statModifier},
-                    Stat Chance: {statChance}""")
+                      ID: {moveID}, 
+                      Power (Gym/Raid): {gymPower}, 
+                      Energy (Gym/Raid): {gymEnergyCost}, 
+                      Power (vs Trainer): {trainerPower}, 
+                      Energy (vs Trainer): {trainerEnergyCost},
+                      Stat Modifier: {statModifier},
+                      Stat Chance: {statChance}""")
 
 # Use this to look at the table in HTML format
 # print(chargedMovesTable.prettify())
