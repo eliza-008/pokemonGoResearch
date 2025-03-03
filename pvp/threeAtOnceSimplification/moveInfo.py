@@ -10,14 +10,16 @@ response.raise_for_status()  # Raise an error if request fails
 
 # filter data
 soup = BeautifulSoup(response.text, "html.parser")
-tempTable = soup.find("table", class_="roundy") # sortable roundy jquery-tablesorter is table class but only roundy works???
+tempTable = soup.find_all("table", class_="roundy") # sortable roundy jquery-tablesorter is table class but only roundy works???
 fastMovesTable = None
 
 # Lcate the Fast Moves table
 for table in tempTable:
     if "Fast Moves" in table.find_previous("title"):
+    h2 = table.find_previous("h2")
+    if h2 and h2.find("span", id="Charged_Attacks"):
         fastMovesTable = table
         break
-print(fastMovesTable)
+print(fastMovesTable.prettify())
 
 # 0 clue why not working LOL,
