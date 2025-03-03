@@ -7,74 +7,52 @@ import csv
 
 url = "https://bulbapedia.bulbagarden.net/wiki/List_of_moves_in_Pok%C3%A9mon_GO"
 response = requests.get(url)
-# print(response.status_code)   # If getting an error, run this and check response code
-response.raise_for_status()     # Raise an error if request fails
+# print(response.status_code)                           # If getting an error, run this and check response code
+response.raise_for_status()                             # Raise an error if request fails
 
 soup = BeautifulSoup(response.text, "html.parser")      # Filter data
 tempTable = soup.find_all("table", class_="roundy")     # Get all tables from URL
 fastMovesTable = None
 
-# Locate the Fast Attacks table
-for table in tempTable:
-    h2 = table.find_previous("h2")
-    if h2 and h2.find("span", id="Fast_Attacks"):
-        fastMovesTable = table
-        break
-# print(fastMovesTable.prettify())
-
-
-if fastMovesTable:
-    #fastMoves = [] # fastMoves is soley for debugging, gonna be written to csv later anyways
-    rows = fastMovesTable.find_all("tr")[1:] # skip header
-
-    # open csv and prepare to write
-    with open("movesData.csv", mode="w", newline="", encoding="utf-8") as file:
-        writer = csv.writer(file)
-        writer.writerow(["Id","Name", "Type","isCharged","Power","Energy Boost","Turns","Energy Cost","Stat Mod","Chance"])
-
-        for n in rows:
-            columns = n.find_all("td")
-            if columns:
-                moveId    = columns[0].get_text(strip=True)
-                moveName  = columns[1].get_text(strip=True)  
-                moveType  = columns[2].get_text(strip=True)  
-                movePower = columns[8].get_text(strip=True)  
-                moveBoost = columns[9].get_text(strip=True)  
-                moveTurns = columns[10].get_text(strip=True)  
-
-                #fastMoves.append(moveName)
-                writer.writerow([moveId,moveName,moveType,"0",movePower,moveBoost,moveTurns,"0","0,0,0,0,0,0","0"])
-
-# same thing for the charged moves table!
-
-chargeMovesTable = None
-
 # Locate the Charged Attacks table
 for table in tempTable:
     h2 = table.find_previous("h2")
     if h2 and h2.find("span", id="Charged_Attacks"):
-        chargeMovesTable = table
-        break
-# print(chargeMovesTable.prettify())
-if chargeMovesTable:
-    #fastMoves = [] # fastMoves is soley for debugging, gonna be written to csv later anyways
-    rows = chargeMovesTable.find_all("tr")[1:] # skip header
+        chargedMovesTable = table
+    
+# Extract rows from the table
+rows = chargedMovesTable.find_all("tr")
 
-    # open csv and prepare to write
-    with open("movesData.csv", mode="a", newline="", encoding="utf-8") as file:
-        writer = csv.writer(file)
+# Look at each row (skip header row)
+for row in rows[1:]:                                          # Skipping the header
+    
+    # Get each column from the row and ignore graphics (they mess up what columns train power/energy cost + stats are in)
+    columns = [td for td in row.find_all("td") if "min-height" and "background-color" not in td.get("style", "")] 
 
-        for n in rows:
-            columns = n.find_all("td")
 
-            if columns:
-                moveId     = columns[0].get_text(strip=True)
-                moveName   = columns[1].get_text(strip=True)
-                moveType   = columns[2].get_text(strip=True) 
-                movePower  = columns[3].get_text(strip=True)  
-                print(movePower) # error here idk why
-                #moveCost   = columns[9].get_text(strip=True)  
-                #moveStat   = columns[10].get_text(strip=True)  
-                #moveChance = columns[11].get_text(strip=True)
-                #fastMoves.append(moveName)
-                #writer.writerow([moveName,moveType,"1","movePower","0","0","moveCost","moveStat","moveChance"])
+    if len(columns) >= 6:                                     # Ensure there are enough columns (some may be headers)
+        moveName = columns[1].get_text(strip=True)            # Move name (2nd column)
+        moveID = columns[0].get_text(strip=True)              # ID number (1st column)
+
+        gymPower = columns[3].get_text(strip=True)            # Power (Gym/Raid)
+        gymEnergyCost = columns[4].get_text(strip=True)       # Energy cost (Gym/Raid)
+            
+        trainerPower = columns[8].get_text(strip=True)        # Power (Trainer)
+        trainerEnergyCost = columns[9].get_text(strip=True)   # Energy cost (Trainer)
+
+        statModifier = columns[10].get_text(strip=True)       # Stat modifier
+        statChance = columns[11].get_text(strip=True)         # Stat chance
+        
+        if moveName and moveID:                               # Check to make sure they're not empty (some values are)
+
+            print(f"""Move: {moveName},
+                    ID: {moveID}, 
+                    Power (Gym/Raid): {gymPower}, 
+                    Energy (Gym/Raid): {gymEnergyCost}, 
+                    Power (vs Trainer): {trainerPower}, 
+                    Energy (vs Trainer): {trainerEnergyCost},
+                    Stat Modifier: {statModifier},
+                    Stat Chance: {statChance}""")
+
+# Use this to look at the table in HTML format
+# print(chargedMovesTable.prettify())
