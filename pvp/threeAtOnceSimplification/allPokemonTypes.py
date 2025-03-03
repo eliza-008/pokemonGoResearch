@@ -21,6 +21,8 @@ pokemon_data = []
 for row in table.find_all("tr")[1:]:
     columns = row.find_all("td")
     if len(columns) > 2:  
+
+        pokeID = columns[0].text.strip()
         # pokemon name is in the second column 
         name_tag = columns[1].find("a")
         name = name_tag.text.strip() if name_tag else columns[1].text.strip()
@@ -28,17 +30,17 @@ for row in table.find_all("tr")[1:]:
         # pokemon types are in the third column
         types = [t.text.strip() for t in columns[2].find_all("a")]
         
-        pokemon_data.append([name, types])
+        pokemon_data.append([pokeID, name, types])
 # write to csv
 with open("pokemonData.csv", mode="w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
     
     # header row
-    writer.writerow(["Name", "Type"])
+    writer.writerow(["ID","Name", "Type"])
     
     # actual data
     for p in pokemon_data:
-        writer.writerow([p[0], ", ".join(p[1])])  # Join types with a comma
+        writer.writerow([p[0], p[1], ", ".join(p[2])])  # Join types with a comma
 
 # print pokemon to verify works
 for p in pokemon_data[:10]:

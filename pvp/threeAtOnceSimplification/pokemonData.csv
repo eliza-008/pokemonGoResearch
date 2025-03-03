@@ -1,1086 +1,1086 @@
-Name,Type
-Bulbasaur,"Grass, Poison"
-Ivysaur,"Grass, Poison"
-Venusaur,"Grass, Poison"
-Venusaur,"Grass, Poison"
-Charmander,Fire
-Charmeleon,Fire
-Charizard,"Fire, Flying"
-Charizard,"Fire, Dragon"
-Charizard,"Fire, Flying"
-Squirtle,Water
-Wartortle,Water
-Blastoise,Water
-Blastoise,Water
-Caterpie,Bug
-Metapod,Bug
-Butterfree,"Bug, Flying"
-Weedle,"Bug, Poison"
-Kakuna,"Bug, Poison"
-Beedrill,"Bug, Poison"
-Beedrill,"Bug, Poison"
-Pidgey,"Normal, Flying"
-Pidgeotto,"Normal, Flying"
-Pidgeot,"Normal, Flying"
-Pidgeot,"Normal, Flying"
-Rattata,Normal
-Rattata,"Dark, Normal"
-Raticate,Normal
-Raticate,"Dark, Normal"
-Spearow,"Normal, Flying"
-Fearow,"Normal, Flying"
-Ekans,Poison
-Arbok,Poison
-Pikachu,Electric
-Pikachu,Electric
-Pikachu,Electric
-Pikachu,Electric
-Pikachu,Electric
-Pikachu,Electric
-Raichu,Electric
-Raichu,"Electric, Psychic"
-Sandshrew,Ground
-Sandshrew,"Ice, Steel"
-Sandslash,Ground
-Sandslash,"Ice, Steel"
-Nidoran♀,Poison
-Nidorina,Poison
-Nidoqueen,"Poison, Ground"
-Nidoran♂,Poison
-Nidorino,Poison
-Nidoking,"Poison, Ground"
-Clefairy,Fairy
-Clefable,Fairy
-Vulpix,Fire
-Vulpix,Ice
-Ninetales,Fire
-Ninetales,"Ice, Fairy"
-Jigglypuff,"Normal, Fairy"
-Wigglytuff,"Normal, Fairy"
-Zubat,"Poison, Flying"
-Golbat,"Poison, Flying"
-Oddish,"Grass, Poison"
-Gloom,"Grass, Poison"
-Vileplume,"Grass, Poison"
-Paras,"Bug, Grass"
-Parasect,"Bug, Grass"
-Venonat,"Bug, Poison"
-Venomoth,"Bug, Poison"
-Diglett,Ground
-Diglett,"Ground, Steel"
-Dugtrio,Ground
-Dugtrio,"Ground, Steel"
-Meowth,Normal
-Meowth,Dark
-Meowth,Steel
-Persian,Normal
-Persian,Dark
-Psyduck,Water
-Golduck,Water
-Mankey,Fighting
-Primeape,Fighting
-Growlithe,Fire
-Growlithe,"Fire, Rock"
-Arcanine,Fire
-Arcanine,"Fire, Rock"
-Poliwag,Water
-Poliwhirl,Water
-Poliwrath,"Water, Fighting"
-Abra,Psychic
-Kadabra,Psychic
-Alakazam,Psychic
-Alakazam,Psychic
-Machop,Fighting
-Machoke,Fighting
-Machamp,Fighting
-Bellsprout,"Grass, Poison"
-Weepinbell,"Grass, Poison"
-Victreebel,"Grass, Poison"
-Tentacool,"Water, Poison"
-Tentacruel,"Water, Poison"
-Geodude,"Rock, Ground"
-Geodude,"Rock, Electric"
-Graveler,"Rock, Ground"
-Graveler,"Rock, Electric"
-Golem,"Rock, Ground"
-Golem,"Rock, Electric"
-Ponyta,Fire
-Ponyta,Psychic
-Rapidash,Fire
-Rapidash,"Psychic, Fairy"
-Slowpoke,"Water, Psychic"
-Slowpoke,Psychic
-Slowbro,"Water, Psychic"
-Slowbro,"Water, Psychic"
-Slowbro,"Poison, Psychic"
-Magnemite,"Electric, Steel"
-Magneton,"Electric, Steel"
-Farfetch'd,"Normal, Flying"
-Farfetch'd,Fighting
-Doduo,"Normal, Flying"
-Dodrio,"Normal, Flying"
-Seel,Water
-Dewgong,"Water, Ice"
-Grimer,Poison
-Grimer,"Poison, Dark"
-Muk,Poison
-Muk,"Poison, Dark"
-Shellder,Water
-Cloyster,"Water, Ice"
-Gastly,"Ghost, Poison"
-Haunter,"Ghost, Poison"
-Gengar,"Ghost, Poison"
-Gengar,"Ghost, Poison"
-Onix,"Rock, Ground"
-Drowzee,Psychic
-Hypno,Psychic
-Krabby,Water
-Kingler,Water
-Voltorb,Electric
-Voltorb,"Electric, Grass"
-Electrode,Electric
-Electrode,"Electric, Grass"
-Exeggcute,"Grass, Psychic"
-Exeggutor,"Grass, Psychic"
-Exeggutor,"Grass, Dragon"
-Cubone,Ground
-Marowak,Ground
-Marowak,"Fire, Ghost"
-Hitmonlee,Fighting
-Hitmonchan,Fighting
-Lickitung,Normal
-Koffing,Poison
-Weezing,Poison
-Weezing,"Poison, Fairy"
-Rhyhorn,"Ground, Rock"
-Rhydon,"Ground, Rock"
-Chansey,Normal
-Tangela,Grass
-Kangaskhan,Normal
-Kangaskhan,Normal
-Horsea,Water
-Seadra,Water
-Goldeen,Water
-Seaking,Water
-Staryu,Water
-Starmie,"Water, Psychic"
-Mr. Mime,"Psychic, Fairy"
-Mr. Mime,"Ice, Psychic"
-Scyther,"Bug, Flying"
-Jynx,"Ice, Psychic"
-Electabuzz,Electric
-Magmar,Fire
-Pinsir,Bug
-Pinsir,"Bug, Flying"
-Tauros,Normal
-Magikarp,Water
-Gyarados,"Water, Flying"
-Gyarados,"Water, Dark"
-Lapras,"Water, Ice"
-Ditto,Normal
-Eevee,Normal
-Vaporeon,Water
-Jolteon,Electric
-Flareon,Fire
-Porygon,Normal
-Omanyte,"Rock, Water"
-Omastar,"Rock, Water"
-Kabuto,"Rock, Water"
-Kabutops,"Rock, Water"
-Aerodactyl,"Rock, Flying"
-Aerodactyl,"Rock, Flying"
-Snorlax,Normal
-Articuno,"Ice, Flying"
-Articuno,"Psychic, Flying"
-Zapdos,"Electric, Flying"
-Zapdos,"Fighting, Flying"
-Moltres,"Fire, Flying"
-Moltres,"Dark, Flying"
-Dratini,Dragon
-Dragonair,Dragon
-Dragonite,"Dragon, Flying"
-Mewtwo,Psychic
-Mewtwo,Psychic
-Mew,Psychic
-Chikorita,Grass
-Bayleef,Grass
-Meganium,Grass
-Cyndaquil,Fire
-Quilava,Fire
-Typhlosion,Fire
-Typhlosion,"Fire, Ghost"
-Totodile,Water
-Croconaw,Water
-Feraligatr,Water
-Sentret,Normal
-Furret,Normal
-Hoothoot,"Normal, Flying"
-Noctowl,"Normal, Flying"
-Ledyba,"Bug, Flying"
-Ledian,"Bug, Flying"
-Spinarak,"Bug, Poison"
-Ariados,"Bug, Poison"
-Crobat,"Poison, Flying"
-Chinchou,"Water, Electric"
-Lanturn,"Water, Electric"
-Pichu,Electric
-Cleffa,Fairy
-Igglybuff,"Normal, Fairy"
-Togepi,Fairy
-Togetic,"Fairy, Flying"
-Natu,"Psychic, Flying"
-Xatu,"Psychic, Flying"
-Mareep,Electric
-Flaaffy,Electric
-Ampharos,Electric
-Ampharos,"Electric, Dragon"
-Bellossom,Grass
-Marill,"Water, Fairy"
-Azumarill,"Water, Fairy"
-Sudowoodo,Rock
-Politoed,Water
-Hoppip,"Grass, Flying"
-Skiploom,"Grass, Flying"
-Jumpluff,"Grass, Flying"
-Aipom,Normal
-Sunkern,Grass
-Sunflora,Grass
-Yanma,"Bug, Flying"
-Wooper,"Water, Ground"
-Wooper,"Poison, Ground"
-Quagsire,"Water, Ground"
-Espeon,Psychic
-Umbreon,Dark
-Murkrow,"Dark, Flying"
-Slowking,"Water, Psychic"
-Slowking,"Poison, Psychic"
-Misdreavus,Ghost
-Unown,Psychic
-Wobbuffet,Psychic
-Girafarig,"Normal, Psychic"
-Pineco,Bug
-Forretress,"Bug, Steel"
-Dunsparce,Normal
-Gligar,"Ground, Flying"
-Steelix,"Steel, Ground"
-Steelix,"Steel, Ground"
-Snubbull,Fairy
-Granbull,Fairy
-Qwilfish,"Water, Poison"
-Qwilfish,"Dark, Poison"
-Scizor,"Bug, Steel"
-Scizor,"Bug, Steel"
-Shuckle,"Bug, Rock"
-Heracross,"Bug, Fighting"
-Heracross,"Bug, Fighting"
-Sneasel,"Dark, Ice"
-Sneasel,"Fighting, Poison"
-Teddiursa,Normal
-Ursaring,Normal
-Slugma,Fire
-Magcargo,"Fire, Rock"
-Swinub,"Ice, Ground"
-Piloswine,"Ice, Ground"
-Corsola,"Water, Rock"
-Corsola,Ghost
-Remoraid,Water
-Octillery,Water
-Delibird,"Ice, Flying"
-Mantine,"Water, Flying"
-Skarmory,"Steel, Flying"
-Houndour,"Dark, Fire"
-Houndoom,"Dark, Fire"
-Houndoom,"Dark, Fire"
-Kingdra,"Water, Dragon"
-Phanpy,Ground
-Donphan,Ground
-Porygon2,Normal
-Stantler,Normal
-Smeargle,Normal
-Tyrogue,Fighting
-Hitmontop,Fighting
-Smoochum,"Ice, Psychic"
-Elekid,Electric
-Magby,Fire
-Miltank,Normal
-Blissey,Normal
-Raikou,Electric
-Entei,Fire
-Suicune,Water
-Larvitar,"Rock, Ground"
-Pupitar,"Rock, Ground"
-Tyranitar,"Rock, Dark"
-Tyranitar,"Rock, Dark"
-Lugia,"Psychic, Flying"
-Lugia,"Psychic, Flying"
-Ho-oh,"Fire, Flying"
-Ho-oh,"Fire, Flying"
-Celebi,"Psychic, Grass"
-Treecko,Grass
-Grovyle,Grass
-Sceptile,Grass
-Sceptile,"Grass, Dragon"
-Torchic,Fire
-Combusken,"Fire, Fighting"
-Blaziken,"Fire, Fighting"
-Blaziken,"Fire, Fighting"
-Mudkip,Water
-Marshtomp,"Water, Ground"
-Swampert,"Water, Ground"
-Swampert,"Water, Ground"
-Poochyena,Dark
-Mightyena,Dark
-Zigzagoon,Normal
-Zigzagoon,"Dark, Normal"
-Linoone,Normal
-Linoone,"Dark, Normal"
-Wurmple,Bug
-Silcoon,Bug
-Beautifly,"Bug, Flying"
-Cascoon,Bug
-Dustox,"Bug, Poison"
-Lotad,"Water, Grass"
-Lombre,"Water, Grass"
-Ludicolo,"Water, Grass"
-Seedot,Grass
-Nuzleaf,"Grass, Dark"
-Shiftry,"Grass, Dark"
-Taillow,"Normal, Flying"
-Swellow,"Normal, Flying"
-Wingull,"Water, Flying"
-Pelipper,"Water, Flying"
-Ralts,"Psychic, Fairy"
-Kirlia,"Psychic, Fairy"
-Gardevoir,"Psychic, Fairy"
-Gardevoir,"Psychic, Fairy"
-Surskit,"Bug, Water"
-Masquerain,"Bug, Flying"
-Shroomish,Grass
-Breloom,"Grass, Fighting"
-Slakoth,Normal
-Vigoroth,Normal
-Slaking,Normal
-Nincada,"Bug, Ground"
-Ninjask,"Bug, Flying"
-Shedinja,"Bug, Ghost"
-Whismur,Normal
-Loudred,Normal
-Exploud,Normal
-Makuhita,Fighting
-Hariyama,Fighting
-Azurill,"Normal, Fairy"
-Nosepass,Rock
-Skitty,Normal
-Delcatty,Normal
-Sableye,"Dark, Ghost"
-Sableye,"Dark, Ghost"
-Mawile,"Steel, Fairy"
-Mawile,"Steel, Fairy"
-Aron,"Steel, Rock"
-Lairon,"Steel, Rock"
-Aggron,"Steel, Rock"
-Aggron,Steel
-Meditite,"Fighting, Psychic"
-Medicham,"Fighting, Psychic"
-Medicham,"Fighting, Psychic"
-Electrike,Electric
-Manectric,Electric
-Manectric,Electric
-Plusle,Electric
-Minun,Electric
-Volbeat,Bug
-Illumise,Bug
-Roselia,"Grass, Poison"
-Gulpin,Poison
-Swalot,Poison
-Carvanha,"Water, Dark"
-Sharpedo,"Water, Dark"
-Wailmer,Water
-Wailord,Water
-Numel,"Fire, Ground"
-Camerupt,"Fire, Ground"
-Torkoal,Fire
-Spoink,Psychic
-Grumpig,Psychic
-Spinda,Normal
-Trapinch,Ground
-Vibrava,"Ground, Dragon"
-Flygon,"Ground, Dragon"
-Cacnea,Grass
-Cacturne,"Grass, Dark"
-Swablu,"Normal, Flying"
-Altaria,"Dragon, Flying"
-Altaria,"Dragon, Fairy"
-Zangoose,Normal
-Seviper,Poison
-Lunatone,"Rock, Psychic"
-Solrock,"Rock, Psychic"
-Barboach,"Water, Ground"
-Whiscash,"Water, Ground"
-Corphish,Water
-Crawdaunt,"Water, Dark"
-Baltoy,"Ground, Psychic"
-Claydol,"Ground, Psychic"
-Lileep,"Rock, Grass"
-Cradily,"Rock, Grass"
-Anorith,"Rock, Bug"
-Armaldo,"Rock, Bug"
-Feebas,Water
-Milotic,Water
-Castform,Normal
-Castform,Fire
-Castform,Water
-Castform,Ice
-Kecleon,Normal
-Shuppet,Ghost
-Banette,Ghost
-Banette,Ghost
-Duskull,Ghost
-Dusclops,Ghost
-Tropius,"Grass, Flying"
-Chimecho,Psychic
-Absol,Dark
-Absol,Dark
-Wynaut,Psychic
-Snorunt,Ice
-Glalie,Ice
-Glalie,Ice
-Spheal,"Ice, Water"
-Sealeo,"Ice, Water"
-Walrein,"Ice, Water"
-Clamperl,Water
-Huntail,Water
-Gorebyss,Water
-Relicanth,"Water, Rock"
-Luvdisc,Water
-Bagon,Dragon
-Shelgon,Dragon
-Salamence,"Dragon, Flying"
-Salamence,"Dragon, Flying"
-Beldum,"Steel, Psychic"
-Metang,"Steel, Psychic"
-Metagross,"Steel, Psychic"
-Regirock,Rock
-Regice,Ice
-Registeel,Steel
-Latias,"Dragon, Psychic"
-Latias,"Dragon, Psychic"
-Latios,"Dragon, Psychic"
-Latios,"Dragon, Psychic"
-Kyogre,Water
-Kyogre,Water
-Groudon,Ground
-Groudon,"Ground, Fire"
-Rayquaza,"Dragon, Flying"
-Rayquaza,"Dragon, Flying"
-Jirachi,"Steel, Psychic"
-Deoxys,Psychic
-Deoxys,Psychic
-Deoxys,Psychic
-Deoxys,Psychic
-Turtwig,Grass
-Grotle,Grass
-Torterra,"Grass, Ground"
-Chimchar,Fire
-Monferno,"Fire, Fighting"
-Infernape,"Fire, Fighting"
-Piplup,Water
-Prinplup,Water
-Empoleon,"Water, Steel"
-Starly,"Normal, Flying"
-Staravia,"Normal, Flying"
-Staraptor,"Normal, Flying"
-Bidoof,Normal
-Bibarel,"Normal, Water"
-Kricketot,Bug
-Kricketune,Bug
-Shinx,Electric
-Luxio,Electric
-Luxray,Electric
-Budew,"Grass, Poison"
-Roserade,"Grass, Poison"
-Cranidos,Rock
-Rampardos,Rock
-Shieldon,"Rock, Steel"
-Bastiodon,"Rock, Steel"
-Burmy,Bug
-Burmy,Bug
-Burmy,Bug
-Wormadam,"Bug, Grass"
-Wormadam,"Bug, Ground"
-Wormadam,"Bug, Steel"
-Mothim,"Bug, Flying"
-Combee,"Bug, Flying"
-Vespiquen,"Bug, Flying"
-Pachirisu,Electric
-Buizel,Water
-Floatzel,Water
-Cherubi,Grass
-Cherrim,Grass
-Cherrim,Grass
-Shellos,Water
-Shellos,Water
-Gastrodon,"Water, Ground"
-Gastrodon,"Water, Ground"
-Ambipom,Normal
-Drifloon,"Ghost, Flying"
-Drifblim,"Ghost, Flying"
-Buneary,Normal
-Lopunny,Normal
-Lopunny,"Normal, Fighting"
-Mismagius,Ghost
-Honchkrow,"Dark, Flying"
-Glameow,Normal
-Purugly,Normal
-Chingling,Psychic
-Stunky,"Poison, Dark"
-Skuntank,"Poison, Dark"
-Bronzor,"Steel, Psychic"
-Bronzong,"Steel, Psychic"
-Bonsly,Rock
-Mime Jr.,"Psychic, Fairy"
-Happiny,Normal
-Chatot,"Normal, Flying"
-Spiritomb,"Ghost, Dark"
-Gible,"Dragon, Ground"
-Gabite,"Dragon, Ground"
-Garchomp,"Dragon, Ground"
-Munchlax,Normal
-Riolu,Fighting
-Lucario,"Fighting, Steel"
-Lucario,"Fighting, Steel"
-Hippopotas,Ground
-Hippowdon,Ground
-Skorupi,"Poison, Bug"
-Drapion,"Poison, Dark"
-Croagunk,"Poison, Fighting"
-Toxicroak,"Poison, Fighting"
-Carnivine,Grass
-Finneon,Water
-Lumineon,Water
-Mantyke,"Water, Flying"
-Snover,"Grass, Ice"
-Abomasnow,"Grass, Ice"
-Abomasnow,"Grass, Ice"
-Weavile,"Dark, Ice"
-Magnezone,"Electric, Steel"
-Lickilicky,Normal
-Rhyperior,"Ground, Rock"
-Tangrowth,Grass
-Electivire,Electric
-Magmortar,Fire
-Togekiss,"Fairy, Flying"
-Yanmega,"Bug, Flying"
-Leafeon,Grass
-Glaceon,Ice
-Gliscor,"Ground, Flying"
-Mamoswine,"Ice, Ground"
-Porygon-Z,Normal
-Gallade,"Psychic, Fighting"
-Gallade,"Psychic, Fighting"
-Probopass,"Rock, Steel"
-Dusknoir,Ghost
-Froslass,"Ice, Ghost"
-Rotom,"Electric, Ghost"
-Rotom,"Electric, Water"
-Rotom,"Electric, Ice"
-Rotom,"Electric, Grass"
-Uxie,Psychic
-Mesprit,Psychic
-Azelf,Psychic
-Dialga,"Steel, Dragon"
-Dialga,"Steel, Dragon"
-Palkia,"Water, Dragon"
-Palkia,"Water, Dragon"
-Heatran,"Fire, Steel"
-Regigigas,Normal
-Giratina,"Ghost, Dragon"
-Giratina,"Ghost, Dragon"
-Cresselia,Psychic
-Darkrai,Dark
-Shaymin,Grass
-Shaymin,"Grass, Flying"
-Victini,"Psychic, Fire"
-Snivy,Grass
-Servine,Grass
-Serperior,Grass
-Tepig,Fire
-Pignite,"Fire, Fighting"
-Emboar,"Fire, Fighting"
-Oshawott,Water
-Dewott,Water
-Samurott,Water
-Samurott,"Water, Dark"
-Patrat,Normal
-Watchog,Normal
-Lillipup,Normal
-Herdier,Normal
-Stoutland,Normal
-Purrloin,Dark
-Liepard,Dark
-Pansage,Grass
-Simisage,Grass
-Pansear,Fire
-Simisear,Fire
-Panpour,Water
-Simipour,Water
-Munna,Psychic
-Musharna,Psychic
-Pidove,"Normal, Flying"
-Tranquill,"Normal, Flying"
-Unfezant,"Normal, Flying"
-Blitzle,Electric
-Zebstrika,Electric
-Roggenrola,Rock
-Boldore,Rock
-Gigalith,Rock
-Woobat,"Psychic, Flying"
-Swoobat,"Psychic, Flying"
-Drilbur,Ground
-Excadrill,"Ground, Steel"
-Audino,Normal
-Timburr,Fighting
-Gurdurr,Fighting
-Conkeldurr,Fighting
-Tympole,Water
-Palpitoad,"Water, Ground"
-Seismitoad,"Water, Ground"
-Throh,Fighting
-Sawk,Fighting
-Sewaddle,"Bug, Grass"
-Swadloon,"Bug, Grass"
-Leavanny,"Bug, Grass"
-Venipede,"Bug, Poison"
-Whirlipede,"Bug, Poison"
-Scolipede,"Bug, Poison"
-Cottonee,"Grass, Fairy"
-Whimsicott,"Grass, Fairy"
-Petilil,Grass
-Lilligant,Grass
-Basculin,Water
-Basculin,Water
-Basculin,Water
-Sandile,"Ground, Dark"
-Krokorok,"Ground, Dark"
-Krookodile,"Ground, Dark"
-Darumaka,Fire
-Darumaka,Ice
-Darmanitan,Fire
-Darmanitan,Ice
-Maractus,Grass
-Dwebble,"Bug, Rock"
-Crustle,"Bug, Rock"
-Scraggy,"Dark, Fighting"
-Scrafty,"Dark, Fighting"
-Sigilyph,"Psychic, Flying"
-Yamask,Ghost
-Yamask,"Ground, Ghost"
-Cofagrigus,Ghost
-Tirtouga,"Water, Rock"
-Carracosta,"Water, Rock"
-Archen,"Rock, Flying"
-Archeops,"Rock, Flying"
-Trubbish,Poison
-Garbodor,Poison
-Zorua,Dark
-Zoroark,Dark
-Minccino,Normal
-Cinccino,Normal
-Gothita,Psychic
-Gothorita,Psychic
-Gothitelle,Psychic
-Solosis,Psychic
-Duosion,Psychic
-Reuniclus,Psychic
-Ducklett,"Water, Flying"
-Swanna,"Water, Flying"
-Vanillite,Ice
-Vanillish,Ice
-Vanilluxe,Ice
-Deerling,"Normal, Grass"
-Deerling,"Normal, Grass"
-Deerling,"Normal, Grass"
-Deerling,"Normal, Grass"
-Sawsbuck,"Normal, Grass"
-Sawsbuck,"Normal, Grass"
-Sawsbuck,"Normal, Grass"
-Sawsbuck,"Normal, Grass"
-Emolga,"Electric, Flying"
-Karrablast,Bug
-Escavalier,"Bug, Steel"
-Foongus,"Grass, Poison"
-Amoonguss,"Grass, Poison"
-Frillish,"Water, Ghost"
-Frillish,"Water, Ghost"
-Jellicent,"Water, Ghost"
-Jellicent,"Water, Ghost"
-Alomomola,Water
-Joltik,"Bug, Electric"
-Galvantula,"Bug, Electric"
-Ferroseed,"Grass, Steel"
-Ferrothorn,"Grass, Steel"
-Klink,Steel
-Klang,Steel
-Klinklang,Steel
-Tynamo,Electric
-Eelektrik,Electric
-Eelektross,Electric
-Elgyem,Psychic
-Beheeyem,Psychic
-Litwick,"Ghost, Fire"
-Lampent,"Ghost, Fire"
-Chandelure,"Ghost, Fire"
-Axew,Dragon
-Fraxure,Dragon
-Haxorus,Dragon
-Cubchoo,Ice
-Beartic,Ice
-Cryogonal,Ice
-Shelmet,Bug
-Accelgor,Bug
-Stunfisk,"Ground, Electric"
-Stunfisk,"Ground, Steel"
-Mienfoo,Fighting
-Mienshao,Fighting
-Druddigon,Dragon
-Golett,"Ground, Ghost"
-Golurk,"Ground, Ghost"
-Pawniard,"Dark, Steel"
-Bisharp,"Dark, Steel"
-Bouffalant,Normal
-Rufflet,"Normal, Flying"
-Braviary,"Normal, Flying"
-Braviary,"Psychic, Flying"
-Vullaby,"Dark, Flying"
-Mandibuzz,"Dark, Flying"
-Heatmor,Fire
-Durant,"Bug, Steel"
-Deino,"Dark, Dragon"
-Zweilous,"Dark, Dragon"
-Hydreigon,"Dark, Dragon"
-Larvesta,"Bug, Fire"
-Volcarona,"Bug, Fire"
-Cobalion,"Steel, Fighting"
-Terrakion,"Rock, Fighting"
-Virizion,"Grass, Fighting"
-Tornadus,Flying
-Tornadus,Flying
-Thundurus,"Electric, Flying"
-Thundurus,"Electric, Flying"
-Reshiram,"Dragon, Fire"
-Zekrom,"Dragon, Electric"
-Landorus,"Ground, Flying"
-Landorus,"Ground, Flying"
-Kyurem,"Dragon, Ice"
-Keldeo,"Water, Fighting"
-Meloetta,"Normal, Psychic"
-Genesect,"Bug, Steel"
-Genesect,"Bug, Steel"
-Genesect,"Bug, Steel"
-Genesect,"Bug, Steel"
-Genesect,"Bug, Steel"
-Chespin,Grass
-Quilladin,Grass
-Chesnaught,"Grass, Fighting"
-Fennekin,Fire
-Braixen,Fire
-Delphox,"Fire, Psychic"
-Froakie,Water
-Frogadier,Water
-Greninja,"Water, Dark"
-Bunnelby,Normal
-Diggersby,"Normal, Ground"
-Fletchling,"Normal, Flying"
-Fletchinder,"Fire, Flying"
-Talonflame,"Fire, Flying"
-Scatterbug,Bug
-Spewpa,Bug
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Vivillon,"Bug, Flying"
-Litleo,"Fire, Normal"
-Pyroar,"Fire, Normal"
-Pyroar,"Fire, Normal"
-Flabébé,Fairy
-Flabébé,Fairy
-Flabébé,Fairy
-Flabébé,Fairy
-Flabébé,Fairy
-Floette,Fairy
-Floette,Fairy
-Floette,Fairy
-Floette,Fairy
-Floette,Fairy
-Florges,Fairy
-Florges,Fairy
-Florges,Fairy
-Florges,Fairy
-Florges,Fairy
-Skiddo,Grass
-Gogoat,Grass
-Pancham,Fighting
-Pangoro,"Fighting, Dark"
-Furfrou,Normal
-Furfrou,Normal
-Furfrou,Normal
-Furfrou,Normal
-Furfrou,Normal
-Furfrou,Normal
-Furfrou,Normal
-Furfrou,Normal
-Furfrou,Normal
-Furfrou,Normal
-Espurr,Psychic
-Meowstic,Psychic
-Meowstic,Psychic
-Spritzee,Fairy
-Aromatisse,Fairy
-Swirlix,Fairy
-Slurpuff,Fairy
-Inkay,"Dark, Psychic"
-Malamar,"Dark, Psychic"
-Binacle,"Rock, Water"
-Barbaracle,"Rock, Water"
-Skrelp,"Poison, Water"
-Dragalge,"Poison, Dragon"
-Clauncher,Water
-Clawitzer,Water
-Helioptile,"Electric, Normal"
-Heliolisk,"Electric, Normal"
-Tyrunt,"Rock, Dragon"
-Tyrantrum,"Rock, Dragon"
-Amaura,"Rock, Ice"
-Aurorus,"Rock, Ice"
-Sylveon,Fairy
-Hawlucha,"Fighting, Flying"
-Dedenne,"Electric, Fairy"
-Carbink,"Rock, Fairy"
-Goomy,Dragon
-Sliggoo,Dragon
-Goodra,Dragon
-Klefki,"Steel, Fairy"
-Phantump,"Ghost, Grass"
-Trevenant,"Ghost, Grass"
-Pumpkaboo,"Ghost, Grass"
-Pumpkaboo,"Ghost, Grass"
-Pumpkaboo,"Ghost, Grass"
-Pumpkaboo,"Ghost, Grass"
-Gourgeist,"Ghost, Grass"
-Gourgeist,"Ghost, Grass"
-Gourgeist,"Ghost, Grass"
-Gourgeist,"Ghost, Grass"
-Bergmite,Ice
-Avalugg,Ice
-Avalugg,"Ice, Rock"
-Noibat,"Flying, Dragon"
-Noivern,"Flying, Dragon"
-Xerneas,Fairy
-Yveltal,"Dark, Flying"
-Zygarde,"Dragon, Ground"
-Zygarde,"Dragon, Ground"
-Zygarde,"Dragon, Ground"
-Diancie,"Rock, Fairy"
-Diancie,"Rock, Fairy"
-Hoopa,"Psychic, Ghost"
-Hoopa,"Psychic, Dark"
-Rowlet,"Grass, Flying"
-Dartrix,"Grass, Flying"
-Decidueye,"Grass, Ghost"
-Decidueye,"Grass, Fighting"
-Litten,Fire
-Torracat,Fire
-Incineroar,"Fire, Dark"
-Popplio,Water
-Brionne,Water
-Primarina,"Water, Fairy"
-Pikipek,"Normal, Flying"
-Trumbeak,"Normal, Flying"
-Toucannon,"Normal, Flying"
-Yungoos,Normal
-Gumshoos,Normal
-Grubbin,Bug
-Charjabug,"Bug, Electric"
-Vikavolt,"Bug, Electric"
-Crabrawler,Fighting
-Crabominable,"Fighting, Ice"
-Oricorio,"Fire, Flying"
-Oricorio,"Electric, Flying"
-Oricorio,"Psychic, Flying"
-Oricorio,"Ghost, Flying"
-Cutiefly,"Bug, Fairy"
-Ribombee,"Bug, Fairy"
-Rockruff,Rock
-Rockruff,Rock
-Lycanroc,Rock
-Lycanroc,Rock
-Lycanroc,Rock
-Mareanie,"Poison, Water"
-Toxapex,"Poison, Water"
-Dewpider,"Water, Bug"
-Araquanid,"Water, Bug"
-Fomantis,Grass
-Lurantis,Grass
-Morelull,"Grass, Fairy"
-Shiinotic,"Grass, Fairy"
-Salandit,"Poison, Fire"
-Salazzle,"Poison, Fire"
-Stufful,"Normal, Fighting"
-Bewear,"Normal, Fighting"
-Bounsweet,Grass
-Steenee,Grass
-Tsareena,Grass
-Comfey,Fairy
-Oranguru,"Normal, Psychic"
-Passimian,Fighting
-Wimpod,"Bug, Water"
-Golisopod,"Bug, Water"
-Sandygast,"Ghost, Ground"
-Palossand,"Ghost, Ground"
-Komala,Normal
-Turtonator,"Fire, Dragon"
-Togedemaru,"Electric, Steel"
-Bruxish,"Water, Psychic"
-Drampa,"Normal, Dragon"
-Jangmo-o,Dragon
-Hakamo-o,"Dragon, Fighting"
-Kommo-o,"Dragon, Fighting"
-Tapu Koko,"Electric, Fairy"
-Tapu Lele,"Psychic, Fairy"
-Tapu Bulu,"Grass, Fairy"
-Tapu Fini,"Water, Fairy"
-Cosmog,Psychic
-Cosmoem,Psychic
-Solgaleo,"Psychic, Steel"
-Lunala,"Psychic, Ghost"
-Nihilego,"Rock, Poison"
-Buzzwole,"Bug, Fighting"
-Pheromosa,"Bug, Fighting"
-Xurkitree,Electric
-Celesteela,"Steel, Flying"
-Kartana,"Grass, Steel"
-Guzzlord,"Dark, Dragon"
-Necrozma,Psychic
-Necrozma,"Psychic, Steel"
-Necrozma,"Psychic, Ghost"
-Marshadow,"Fighting, Ghost"
-Poipole,Poison
-Naganadel,"Poison, Dragon"
-Stakataka,"Rock, Steel"
-Blacephalon,"Fire, Ghost"
-Meltan,Steel
-Melmetal,Steel
-Grookey,Grass
-Thwackey,Grass
-Rillaboom,Grass
-Scorbunny,Fire
-Raboot,Fire
-Cinderace,Fire
-Sobble,Water
-Drizzile,Water
-Inteleon,Water
-Skwovet,Normal
-Greedent,Normal
-Rookidee,Flying
-Corvisquire,Flying
-Corviknight,"Flying, Steel"
-Wooloo,Normal
-Dubwool,Normal
-Toxel,"Electric, Poison"
-Toxtricity,"Electric, Poison"
-Toxtricity,"Electric, Poison"
-Sinistea,Ghost
-Sinistea,Ghost
-Polteageist,Ghost
-Polteageist,Ghost
-Hatenna,Psychic
-Hattrem,Psychic
-Hatterene,"Psychic, Fairy"
-Obstagoon,"Dark, Normal"
-Perrserker,Steel
-Cursola,Ghost
-Sirfetch'd,Fighting
-Mr. Rime,"Ice, Psychic"
-Runerigus,"Ground, Ghost"
-Falinks,Fighting
-Stonjourner,Rock
-Morpeko,"Electric, Dark"
-Morpeko,"Electric, Dark"
-Dreepy,"Dragon, Ghost"
-Drakloak,"Dragon, Ghost"
-Dragapult,"Dragon, Ghost"
-Zacian,Fairy
-Zamazenta,Fighting
-Zarude,"Dark, Grass"
-Regieleki,Electric
-Regidrago,Dragon
-Wyrdeer,"Normal, Psychic"
-Kleavor,"Bug, Rock"
-Ursaluna,"Ground, Normal"
-Sneasler,"Fighting, Poison"
-Overqwil,"Dark, Poison"
-Enamorus,"Fairy, Flying"
-Sprigatito,Grass
-Floragato,Grass
-Meowscarada,"Grass, Dark"
-Fuecoco,Fire
-Crocalor,Fire
-Skeledirge,"Fire, Ghost"
-Quaxly,Water
-Quaxwell,Water
-Quaquaval,"Water, Fighting"
-Lechonk,Normal
-Oinkologne,Normal
-Oinkologne,Normal
-Nymble,Bug
-Lokix,"Bug, Dark"
-Pawmi,Electric
-Pawmo,"Electric, Fighting"
-Pawmot,"Electric, Fighting"
-Tandemaus,Normal
-Maushold,Normal
-Maushold,Normal
-Fidough,Fairy
-Dachsbun,Fairy
-Smoliv,"Grass, Normal"
-Dolliv,"Grass, Normal"
-Arboliva,"Grass, Normal"
-Charcadet,Fire
-Armarouge,"Fire, Psychic"
-Ceruledge,"Fire, Ghost"
-Tadbulb,Electric
-Bellibolt,Electric
-Shroodle,"Poison, Normal"
-Grafaiai,"Poison, Normal"
-Wiglett,Water
-Wugtrio,Water
-Bombirdier,"Flying, Dark"
-Varoom,"Steel, Poison"
-Revavroom,"Steel, Poison"
-Greavard,Ghost
-Houndstone,Ghost
-Cetoddle,Ice
-Cetitan,Ice
-Annihilape,"Fighting, Ghost"
-Clodsire,"Poison, Ground"
-Frigibax,"Dragon, Ice"
-Arctibax,"Dragon, Ice"
-Baxcalibur,"Dragon, Ice"
-Gimmighoul,Ghost
-Gholdengo,"Steel, Ghost"
+ID,Name,Type
+0001,Bulbasaur,"Grass, Poison"
+0002,Ivysaur,"Grass, Poison"
+0003,Venusaur,"Grass, Poison"
+0003,Venusaur,"Grass, Poison"
+0004,Charmander,Fire
+0005,Charmeleon,Fire
+0006,Charizard,"Fire, Flying"
+0006,Charizard,"Fire, Dragon"
+0006,Charizard,"Fire, Flying"
+0007,Squirtle,Water
+0008,Wartortle,Water
+0009,Blastoise,Water
+0009,Blastoise,Water
+0010,Caterpie,Bug
+0011,Metapod,Bug
+0012,Butterfree,"Bug, Flying"
+0013,Weedle,"Bug, Poison"
+0014,Kakuna,"Bug, Poison"
+0015,Beedrill,"Bug, Poison"
+0015,Beedrill,"Bug, Poison"
+0016,Pidgey,"Normal, Flying"
+0017,Pidgeotto,"Normal, Flying"
+0018,Pidgeot,"Normal, Flying"
+0018,Pidgeot,"Normal, Flying"
+0019,Rattata,Normal
+0019,Rattata,"Dark, Normal"
+0020,Raticate,Normal
+0020,Raticate,"Dark, Normal"
+0021,Spearow,"Normal, Flying"
+0022,Fearow,"Normal, Flying"
+0023,Ekans,Poison
+0024,Arbok,Poison
+0025,Pikachu,Electric
+0025,Pikachu,Electric
+0025,Pikachu,Electric
+0025,Pikachu,Electric
+0025,Pikachu,Electric
+0025,Pikachu,Electric
+0026,Raichu,Electric
+0026,Raichu,"Electric, Psychic"
+0027,Sandshrew,Ground
+0027,Sandshrew,"Ice, Steel"
+0028,Sandslash,Ground
+0028,Sandslash,"Ice, Steel"
+0029,Nidoran♀,Poison
+0030,Nidorina,Poison
+0031,Nidoqueen,"Poison, Ground"
+0032,Nidoran♂,Poison
+0033,Nidorino,Poison
+0034,Nidoking,"Poison, Ground"
+0035,Clefairy,Fairy
+0036,Clefable,Fairy
+0037,Vulpix,Fire
+0037,Vulpix,Ice
+0038,Ninetales,Fire
+0038,Ninetales,"Ice, Fairy"
+0039,Jigglypuff,"Normal, Fairy"
+0040,Wigglytuff,"Normal, Fairy"
+0041,Zubat,"Poison, Flying"
+0042,Golbat,"Poison, Flying"
+0043,Oddish,"Grass, Poison"
+0044,Gloom,"Grass, Poison"
+0045,Vileplume,"Grass, Poison"
+0046,Paras,"Bug, Grass"
+0047,Parasect,"Bug, Grass"
+0048,Venonat,"Bug, Poison"
+0049,Venomoth,"Bug, Poison"
+0050,Diglett,Ground
+0050,Diglett,"Ground, Steel"
+0051,Dugtrio,Ground
+0051,Dugtrio,"Ground, Steel"
+0052,Meowth,Normal
+0052,Meowth,Dark
+0052,Meowth,Steel
+0053,Persian,Normal
+0053,Persian,Dark
+0054,Psyduck,Water
+0055,Golduck,Water
+0056,Mankey,Fighting
+0057,Primeape,Fighting
+0058,Growlithe,Fire
+0058,Growlithe,"Fire, Rock"
+0059,Arcanine,Fire
+0059,Arcanine,"Fire, Rock"
+0060,Poliwag,Water
+0061,Poliwhirl,Water
+0062,Poliwrath,"Water, Fighting"
+0063,Abra,Psychic
+0064,Kadabra,Psychic
+0065,Alakazam,Psychic
+0065,Alakazam,Psychic
+0066,Machop,Fighting
+0067,Machoke,Fighting
+0068,Machamp,Fighting
+0069,Bellsprout,"Grass, Poison"
+0070,Weepinbell,"Grass, Poison"
+0071,Victreebel,"Grass, Poison"
+0072,Tentacool,"Water, Poison"
+0073,Tentacruel,"Water, Poison"
+0074,Geodude,"Rock, Ground"
+0074,Geodude,"Rock, Electric"
+0075,Graveler,"Rock, Ground"
+0075,Graveler,"Rock, Electric"
+0076,Golem,"Rock, Ground"
+0076,Golem,"Rock, Electric"
+0077,Ponyta,Fire
+0077,Ponyta,Psychic
+0078,Rapidash,Fire
+0078,Rapidash,"Psychic, Fairy"
+0079,Slowpoke,"Water, Psychic"
+0079,Slowpoke,Psychic
+0080,Slowbro,"Water, Psychic"
+0080,Slowbro,"Water, Psychic"
+0080,Slowbro,"Poison, Psychic"
+0081,Magnemite,"Electric, Steel"
+0082,Magneton,"Electric, Steel"
+0083,Farfetch'd,"Normal, Flying"
+0083,Farfetch'd,Fighting
+0084,Doduo,"Normal, Flying"
+0085,Dodrio,"Normal, Flying"
+0086,Seel,Water
+0087,Dewgong,"Water, Ice"
+0088,Grimer,Poison
+0088,Grimer,"Poison, Dark"
+0089,Muk,Poison
+0089,Muk,"Poison, Dark"
+0090,Shellder,Water
+0091,Cloyster,"Water, Ice"
+0092,Gastly,"Ghost, Poison"
+0093,Haunter,"Ghost, Poison"
+0094,Gengar,"Ghost, Poison"
+0094,Gengar,"Ghost, Poison"
+0095,Onix,"Rock, Ground"
+0096,Drowzee,Psychic
+0097,Hypno,Psychic
+0098,Krabby,Water
+0099,Kingler,Water
+0100,Voltorb,Electric
+0100,Voltorb,"Electric, Grass"
+0101,Electrode,Electric
+0101,Electrode,"Electric, Grass"
+0102,Exeggcute,"Grass, Psychic"
+0103,Exeggutor,"Grass, Psychic"
+0103,Exeggutor,"Grass, Dragon"
+0104,Cubone,Ground
+0105,Marowak,Ground
+0105,Marowak,"Fire, Ghost"
+0106,Hitmonlee,Fighting
+0107,Hitmonchan,Fighting
+0108,Lickitung,Normal
+0109,Koffing,Poison
+0110,Weezing,Poison
+0110,Weezing,"Poison, Fairy"
+0111,Rhyhorn,"Ground, Rock"
+0112,Rhydon,"Ground, Rock"
+0113,Chansey,Normal
+0114,Tangela,Grass
+0115,Kangaskhan,Normal
+0115,Kangaskhan,Normal
+0116,Horsea,Water
+0117,Seadra,Water
+0118,Goldeen,Water
+0119,Seaking,Water
+0120,Staryu,Water
+0121,Starmie,"Water, Psychic"
+0122,Mr. Mime,"Psychic, Fairy"
+0122,Mr. Mime,"Ice, Psychic"
+0123,Scyther,"Bug, Flying"
+0124,Jynx,"Ice, Psychic"
+0125,Electabuzz,Electric
+0126,Magmar,Fire
+0127,Pinsir,Bug
+0127,Pinsir,"Bug, Flying"
+0128,Tauros,Normal
+0129,Magikarp,Water
+0130,Gyarados,"Water, Flying"
+0130,Gyarados,"Water, Dark"
+0131,Lapras,"Water, Ice"
+0132,Ditto,Normal
+0133,Eevee,Normal
+0134,Vaporeon,Water
+0135,Jolteon,Electric
+0136,Flareon,Fire
+0137,Porygon,Normal
+0138,Omanyte,"Rock, Water"
+0139,Omastar,"Rock, Water"
+0140,Kabuto,"Rock, Water"
+0141,Kabutops,"Rock, Water"
+0142,Aerodactyl,"Rock, Flying"
+0142,Aerodactyl,"Rock, Flying"
+0143,Snorlax,Normal
+0144,Articuno,"Ice, Flying"
+0144,Articuno,"Psychic, Flying"
+0145,Zapdos,"Electric, Flying"
+0145,Zapdos,"Fighting, Flying"
+0146,Moltres,"Fire, Flying"
+0146,Moltres,"Dark, Flying"
+0147,Dratini,Dragon
+0148,Dragonair,Dragon
+0149,Dragonite,"Dragon, Flying"
+0150,Mewtwo,Psychic
+0150,Mewtwo,Psychic
+0151,Mew,Psychic
+0152,Chikorita,Grass
+0153,Bayleef,Grass
+0154,Meganium,Grass
+0155,Cyndaquil,Fire
+0156,Quilava,Fire
+0157,Typhlosion,Fire
+0157,Typhlosion,"Fire, Ghost"
+0158,Totodile,Water
+0159,Croconaw,Water
+0160,Feraligatr,Water
+0161,Sentret,Normal
+0162,Furret,Normal
+0163,Hoothoot,"Normal, Flying"
+0164,Noctowl,"Normal, Flying"
+0165,Ledyba,"Bug, Flying"
+0166,Ledian,"Bug, Flying"
+0167,Spinarak,"Bug, Poison"
+0168,Ariados,"Bug, Poison"
+0169,Crobat,"Poison, Flying"
+0170,Chinchou,"Water, Electric"
+0171,Lanturn,"Water, Electric"
+0172,Pichu,Electric
+0173,Cleffa,Fairy
+0174,Igglybuff,"Normal, Fairy"
+0175,Togepi,Fairy
+0176,Togetic,"Fairy, Flying"
+0177,Natu,"Psychic, Flying"
+0178,Xatu,"Psychic, Flying"
+0179,Mareep,Electric
+0180,Flaaffy,Electric
+0181,Ampharos,Electric
+0181,Ampharos,"Electric, Dragon"
+0182,Bellossom,Grass
+0183,Marill,"Water, Fairy"
+0184,Azumarill,"Water, Fairy"
+0185,Sudowoodo,Rock
+0186,Politoed,Water
+0187,Hoppip,"Grass, Flying"
+0188,Skiploom,"Grass, Flying"
+0189,Jumpluff,"Grass, Flying"
+0190,Aipom,Normal
+0191,Sunkern,Grass
+0192,Sunflora,Grass
+0193,Yanma,"Bug, Flying"
+0194,Wooper,"Water, Ground"
+0194,Wooper,"Poison, Ground"
+0195,Quagsire,"Water, Ground"
+0196,Espeon,Psychic
+0197,Umbreon,Dark
+0198,Murkrow,"Dark, Flying"
+0199,Slowking,"Water, Psychic"
+0199,Slowking,"Poison, Psychic"
+0200,Misdreavus,Ghost
+0201,Unown,Psychic
+0202,Wobbuffet,Psychic
+0203,Girafarig,"Normal, Psychic"
+0204,Pineco,Bug
+0205,Forretress,"Bug, Steel"
+0206,Dunsparce,Normal
+0207,Gligar,"Ground, Flying"
+0208,Steelix,"Steel, Ground"
+0208,Steelix,"Steel, Ground"
+0209,Snubbull,Fairy
+0210,Granbull,Fairy
+0211,Qwilfish,"Water, Poison"
+0211,Qwilfish,"Dark, Poison"
+0212,Scizor,"Bug, Steel"
+0212,Scizor,"Bug, Steel"
+0213,Shuckle,"Bug, Rock"
+0214,Heracross,"Bug, Fighting"
+0214,Heracross,"Bug, Fighting"
+0215,Sneasel,"Dark, Ice"
+0215,Sneasel,"Fighting, Poison"
+0216,Teddiursa,Normal
+0217,Ursaring,Normal
+0218,Slugma,Fire
+0219,Magcargo,"Fire, Rock"
+0220,Swinub,"Ice, Ground"
+0221,Piloswine,"Ice, Ground"
+0222,Corsola,"Water, Rock"
+0222,Corsola,Ghost
+0223,Remoraid,Water
+0224,Octillery,Water
+0225,Delibird,"Ice, Flying"
+0226,Mantine,"Water, Flying"
+0227,Skarmory,"Steel, Flying"
+0228,Houndour,"Dark, Fire"
+0229,Houndoom,"Dark, Fire"
+0229,Houndoom,"Dark, Fire"
+0230,Kingdra,"Water, Dragon"
+0231,Phanpy,Ground
+0232,Donphan,Ground
+0233,Porygon2,Normal
+0234,Stantler,Normal
+0235,Smeargle,Normal
+0236,Tyrogue,Fighting
+0237,Hitmontop,Fighting
+0238,Smoochum,"Ice, Psychic"
+0239,Elekid,Electric
+0240,Magby,Fire
+0241,Miltank,Normal
+0242,Blissey,Normal
+0243,Raikou,Electric
+0244,Entei,Fire
+0245,Suicune,Water
+0246,Larvitar,"Rock, Ground"
+0247,Pupitar,"Rock, Ground"
+0248,Tyranitar,"Rock, Dark"
+0248,Tyranitar,"Rock, Dark"
+0249,Lugia,"Psychic, Flying"
+0249,Lugia,"Psychic, Flying"
+0250,Ho-oh,"Fire, Flying"
+0250,Ho-oh,"Fire, Flying"
+0251,Celebi,"Psychic, Grass"
+0252,Treecko,Grass
+0253,Grovyle,Grass
+0254,Sceptile,Grass
+0254,Sceptile,"Grass, Dragon"
+0255,Torchic,Fire
+0256,Combusken,"Fire, Fighting"
+0257,Blaziken,"Fire, Fighting"
+0257,Blaziken,"Fire, Fighting"
+0258,Mudkip,Water
+0259,Marshtomp,"Water, Ground"
+0260,Swampert,"Water, Ground"
+0260,Swampert,"Water, Ground"
+0261,Poochyena,Dark
+0262,Mightyena,Dark
+0263,Zigzagoon,Normal
+0263,Zigzagoon,"Dark, Normal"
+0264,Linoone,Normal
+0264,Linoone,"Dark, Normal"
+0265,Wurmple,Bug
+0266,Silcoon,Bug
+0267,Beautifly,"Bug, Flying"
+0268,Cascoon,Bug
+0269,Dustox,"Bug, Poison"
+0270,Lotad,"Water, Grass"
+0271,Lombre,"Water, Grass"
+0272,Ludicolo,"Water, Grass"
+0273,Seedot,Grass
+0274,Nuzleaf,"Grass, Dark"
+0275,Shiftry,"Grass, Dark"
+0276,Taillow,"Normal, Flying"
+0277,Swellow,"Normal, Flying"
+0278,Wingull,"Water, Flying"
+0279,Pelipper,"Water, Flying"
+0280,Ralts,"Psychic, Fairy"
+0281,Kirlia,"Psychic, Fairy"
+0282,Gardevoir,"Psychic, Fairy"
+0282,Gardevoir,"Psychic, Fairy"
+0283,Surskit,"Bug, Water"
+0284,Masquerain,"Bug, Flying"
+0285,Shroomish,Grass
+0286,Breloom,"Grass, Fighting"
+0287,Slakoth,Normal
+0288,Vigoroth,Normal
+0289,Slaking,Normal
+0290,Nincada,"Bug, Ground"
+0291,Ninjask,"Bug, Flying"
+0292,Shedinja,"Bug, Ghost"
+0293,Whismur,Normal
+0294,Loudred,Normal
+0295,Exploud,Normal
+0296,Makuhita,Fighting
+0297,Hariyama,Fighting
+0298,Azurill,"Normal, Fairy"
+0299,Nosepass,Rock
+0300,Skitty,Normal
+0301,Delcatty,Normal
+0302,Sableye,"Dark, Ghost"
+0302,Sableye,"Dark, Ghost"
+0303,Mawile,"Steel, Fairy"
+0303,Mawile,"Steel, Fairy"
+0304,Aron,"Steel, Rock"
+0305,Lairon,"Steel, Rock"
+0306,Aggron,"Steel, Rock"
+0306,Aggron,Steel
+0307,Meditite,"Fighting, Psychic"
+0308,Medicham,"Fighting, Psychic"
+0308,Medicham,"Fighting, Psychic"
+0309,Electrike,Electric
+0310,Manectric,Electric
+0310,Manectric,Electric
+0311,Plusle,Electric
+0312,Minun,Electric
+0313,Volbeat,Bug
+0314,Illumise,Bug
+0315,Roselia,"Grass, Poison"
+0316,Gulpin,Poison
+0317,Swalot,Poison
+0318,Carvanha,"Water, Dark"
+0319,Sharpedo,"Water, Dark"
+0320,Wailmer,Water
+0321,Wailord,Water
+0322,Numel,"Fire, Ground"
+0323,Camerupt,"Fire, Ground"
+0324,Torkoal,Fire
+0325,Spoink,Psychic
+0326,Grumpig,Psychic
+0327,Spinda,Normal
+0328,Trapinch,Ground
+0329,Vibrava,"Ground, Dragon"
+0330,Flygon,"Ground, Dragon"
+0331,Cacnea,Grass
+0332,Cacturne,"Grass, Dark"
+0333,Swablu,"Normal, Flying"
+0334,Altaria,"Dragon, Flying"
+0334,Altaria,"Dragon, Fairy"
+0335,Zangoose,Normal
+0336,Seviper,Poison
+0337,Lunatone,"Rock, Psychic"
+0338,Solrock,"Rock, Psychic"
+0339,Barboach,"Water, Ground"
+0340,Whiscash,"Water, Ground"
+0341,Corphish,Water
+0342,Crawdaunt,"Water, Dark"
+0343,Baltoy,"Ground, Psychic"
+0344,Claydol,"Ground, Psychic"
+0345,Lileep,"Rock, Grass"
+0346,Cradily,"Rock, Grass"
+0347,Anorith,"Rock, Bug"
+0348,Armaldo,"Rock, Bug"
+0349,Feebas,Water
+0350,Milotic,Water
+0351,Castform,Normal
+0351,Castform,Fire
+0351,Castform,Water
+0351,Castform,Ice
+0352,Kecleon,Normal
+0353,Shuppet,Ghost
+0354,Banette,Ghost
+0354,Banette,Ghost
+0355,Duskull,Ghost
+0356,Dusclops,Ghost
+0357,Tropius,"Grass, Flying"
+0358,Chimecho,Psychic
+0359,Absol,Dark
+0359,Absol,Dark
+0360,Wynaut,Psychic
+0361,Snorunt,Ice
+0362,Glalie,Ice
+0362,Glalie,Ice
+0363,Spheal,"Ice, Water"
+0364,Sealeo,"Ice, Water"
+0365,Walrein,"Ice, Water"
+0366,Clamperl,Water
+0367,Huntail,Water
+0368,Gorebyss,Water
+0369,Relicanth,"Water, Rock"
+0370,Luvdisc,Water
+0371,Bagon,Dragon
+0372,Shelgon,Dragon
+0373,Salamence,"Dragon, Flying"
+0373,Salamence,"Dragon, Flying"
+0374,Beldum,"Steel, Psychic"
+0375,Metang,"Steel, Psychic"
+0376,Metagross,"Steel, Psychic"
+0377,Regirock,Rock
+0378,Regice,Ice
+0379,Registeel,Steel
+0380,Latias,"Dragon, Psychic"
+0380,Latias,"Dragon, Psychic"
+0381,Latios,"Dragon, Psychic"
+0381,Latios,"Dragon, Psychic"
+0382,Kyogre,Water
+0382,Kyogre,Water
+0383,Groudon,Ground
+0383,Groudon,"Ground, Fire"
+0384,Rayquaza,"Dragon, Flying"
+0384,Rayquaza,"Dragon, Flying"
+0385,Jirachi,"Steel, Psychic"
+0386,Deoxys,Psychic
+0386,Deoxys,Psychic
+0386,Deoxys,Psychic
+0386,Deoxys,Psychic
+0387,Turtwig,Grass
+0388,Grotle,Grass
+0389,Torterra,"Grass, Ground"
+0390,Chimchar,Fire
+0391,Monferno,"Fire, Fighting"
+0392,Infernape,"Fire, Fighting"
+0393,Piplup,Water
+0394,Prinplup,Water
+0395,Empoleon,"Water, Steel"
+0396,Starly,"Normal, Flying"
+0397,Staravia,"Normal, Flying"
+0398,Staraptor,"Normal, Flying"
+0399,Bidoof,Normal
+0400,Bibarel,"Normal, Water"
+0401,Kricketot,Bug
+0402,Kricketune,Bug
+0403,Shinx,Electric
+0404,Luxio,Electric
+0405,Luxray,Electric
+0406,Budew,"Grass, Poison"
+0407,Roserade,"Grass, Poison"
+0408,Cranidos,Rock
+0409,Rampardos,Rock
+0410,Shieldon,"Rock, Steel"
+0411,Bastiodon,"Rock, Steel"
+0412,Burmy,Bug
+0412,Burmy,Bug
+0412,Burmy,Bug
+0413,Wormadam,"Bug, Grass"
+0413,Wormadam,"Bug, Ground"
+0413,Wormadam,"Bug, Steel"
+0414,Mothim,"Bug, Flying"
+0415,Combee,"Bug, Flying"
+0416,Vespiquen,"Bug, Flying"
+0417,Pachirisu,Electric
+0418,Buizel,Water
+0419,Floatzel,Water
+0420,Cherubi,Grass
+0421,Cherrim,Grass
+0421,Cherrim,Grass
+0422,Shellos,Water
+0422,Shellos,Water
+0423,Gastrodon,"Water, Ground"
+0423,Gastrodon,"Water, Ground"
+0424,Ambipom,Normal
+0425,Drifloon,"Ghost, Flying"
+0426,Drifblim,"Ghost, Flying"
+0427,Buneary,Normal
+0428,Lopunny,Normal
+0428,Lopunny,"Normal, Fighting"
+0429,Mismagius,Ghost
+0430,Honchkrow,"Dark, Flying"
+0431,Glameow,Normal
+0432,Purugly,Normal
+0433,Chingling,Psychic
+0434,Stunky,"Poison, Dark"
+0435,Skuntank,"Poison, Dark"
+0436,Bronzor,"Steel, Psychic"
+0437,Bronzong,"Steel, Psychic"
+0438,Bonsly,Rock
+0439,Mime Jr.,"Psychic, Fairy"
+0440,Happiny,Normal
+0441,Chatot,"Normal, Flying"
+0442,Spiritomb,"Ghost, Dark"
+0443,Gible,"Dragon, Ground"
+0444,Gabite,"Dragon, Ground"
+0445,Garchomp,"Dragon, Ground"
+0446,Munchlax,Normal
+0447,Riolu,Fighting
+0448,Lucario,"Fighting, Steel"
+0448,Lucario,"Fighting, Steel"
+0449,Hippopotas,Ground
+0450,Hippowdon,Ground
+0451,Skorupi,"Poison, Bug"
+0452,Drapion,"Poison, Dark"
+0453,Croagunk,"Poison, Fighting"
+0454,Toxicroak,"Poison, Fighting"
+0455,Carnivine,Grass
+0456,Finneon,Water
+0457,Lumineon,Water
+0458,Mantyke,"Water, Flying"
+0459,Snover,"Grass, Ice"
+0460,Abomasnow,"Grass, Ice"
+0460,Abomasnow,"Grass, Ice"
+0461,Weavile,"Dark, Ice"
+0462,Magnezone,"Electric, Steel"
+0463,Lickilicky,Normal
+0464,Rhyperior,"Ground, Rock"
+0465,Tangrowth,Grass
+0466,Electivire,Electric
+0467,Magmortar,Fire
+0468,Togekiss,"Fairy, Flying"
+0469,Yanmega,"Bug, Flying"
+0470,Leafeon,Grass
+0471,Glaceon,Ice
+0472,Gliscor,"Ground, Flying"
+0473,Mamoswine,"Ice, Ground"
+0474,Porygon-Z,Normal
+0475,Gallade,"Psychic, Fighting"
+0475,Gallade,"Psychic, Fighting"
+0476,Probopass,"Rock, Steel"
+0477,Dusknoir,Ghost
+0478,Froslass,"Ice, Ghost"
+0479,Rotom,"Electric, Ghost"
+0479,Rotom,"Electric, Water"
+0479,Rotom,"Electric, Ice"
+0479,Rotom,"Electric, Grass"
+0480,Uxie,Psychic
+0481,Mesprit,Psychic
+0482,Azelf,Psychic
+0483,Dialga,"Steel, Dragon"
+0483,Dialga,"Steel, Dragon"
+0484,Palkia,"Water, Dragon"
+0484,Palkia,"Water, Dragon"
+0485,Heatran,"Fire, Steel"
+0486,Regigigas,Normal
+0487,Giratina,"Ghost, Dragon"
+0487,Giratina,"Ghost, Dragon"
+0488,Cresselia,Psychic
+0491,Darkrai,Dark
+0492,Shaymin,Grass
+0492,Shaymin,"Grass, Flying"
+0494,Victini,"Psychic, Fire"
+0495,Snivy,Grass
+0496,Servine,Grass
+0497,Serperior,Grass
+0498,Tepig,Fire
+0499,Pignite,"Fire, Fighting"
+0500,Emboar,"Fire, Fighting"
+0501,Oshawott,Water
+0502,Dewott,Water
+0503,Samurott,Water
+0503,Samurott,"Water, Dark"
+0504,Patrat,Normal
+0505,Watchog,Normal
+0506,Lillipup,Normal
+0507,Herdier,Normal
+0508,Stoutland,Normal
+0509,Purrloin,Dark
+0510,Liepard,Dark
+0511,Pansage,Grass
+0512,Simisage,Grass
+0513,Pansear,Fire
+0514,Simisear,Fire
+0515,Panpour,Water
+0516,Simipour,Water
+0517,Munna,Psychic
+0518,Musharna,Psychic
+0519,Pidove,"Normal, Flying"
+0520,Tranquill,"Normal, Flying"
+0521,Unfezant,"Normal, Flying"
+0522,Blitzle,Electric
+0523,Zebstrika,Electric
+0524,Roggenrola,Rock
+0525,Boldore,Rock
+0526,Gigalith,Rock
+0527,Woobat,"Psychic, Flying"
+0528,Swoobat,"Psychic, Flying"
+0529,Drilbur,Ground
+0530,Excadrill,"Ground, Steel"
+0531,Audino,Normal
+0532,Timburr,Fighting
+0533,Gurdurr,Fighting
+0534,Conkeldurr,Fighting
+0535,Tympole,Water
+0536,Palpitoad,"Water, Ground"
+0537,Seismitoad,"Water, Ground"
+0538,Throh,Fighting
+0539,Sawk,Fighting
+0540,Sewaddle,"Bug, Grass"
+0541,Swadloon,"Bug, Grass"
+0542,Leavanny,"Bug, Grass"
+0543,Venipede,"Bug, Poison"
+0544,Whirlipede,"Bug, Poison"
+0545,Scolipede,"Bug, Poison"
+0546,Cottonee,"Grass, Fairy"
+0547,Whimsicott,"Grass, Fairy"
+0548,Petilil,Grass
+0549,Lilligant,Grass
+0550,Basculin,Water
+0550,Basculin,Water
+0550,Basculin,Water
+0551,Sandile,"Ground, Dark"
+0552,Krokorok,"Ground, Dark"
+0553,Krookodile,"Ground, Dark"
+0554,Darumaka,Fire
+0554,Darumaka,Ice
+0555,Darmanitan,Fire
+0555,Darmanitan,Ice
+0556,Maractus,Grass
+0557,Dwebble,"Bug, Rock"
+0558,Crustle,"Bug, Rock"
+0559,Scraggy,"Dark, Fighting"
+0560,Scrafty,"Dark, Fighting"
+0561,Sigilyph,"Psychic, Flying"
+0562,Yamask,Ghost
+0562,Yamask,"Ground, Ghost"
+0563,Cofagrigus,Ghost
+0564,Tirtouga,"Water, Rock"
+0565,Carracosta,"Water, Rock"
+0566,Archen,"Rock, Flying"
+0567,Archeops,"Rock, Flying"
+0568,Trubbish,Poison
+0569,Garbodor,Poison
+0570,Zorua,Dark
+0571,Zoroark,Dark
+0572,Minccino,Normal
+0573,Cinccino,Normal
+0574,Gothita,Psychic
+0575,Gothorita,Psychic
+0576,Gothitelle,Psychic
+0577,Solosis,Psychic
+0578,Duosion,Psychic
+0579,Reuniclus,Psychic
+0580,Ducklett,"Water, Flying"
+0581,Swanna,"Water, Flying"
+0582,Vanillite,Ice
+0583,Vanillish,Ice
+0584,Vanilluxe,Ice
+0585,Deerling,"Normal, Grass"
+0585,Deerling,"Normal, Grass"
+0585,Deerling,"Normal, Grass"
+0585,Deerling,"Normal, Grass"
+0586,Sawsbuck,"Normal, Grass"
+0586,Sawsbuck,"Normal, Grass"
+0586,Sawsbuck,"Normal, Grass"
+0586,Sawsbuck,"Normal, Grass"
+0587,Emolga,"Electric, Flying"
+0588,Karrablast,Bug
+0589,Escavalier,"Bug, Steel"
+0590,Foongus,"Grass, Poison"
+0591,Amoonguss,"Grass, Poison"
+0592,Frillish,"Water, Ghost"
+0592,Frillish,"Water, Ghost"
+0593,Jellicent,"Water, Ghost"
+0593,Jellicent,"Water, Ghost"
+0594,Alomomola,Water
+0595,Joltik,"Bug, Electric"
+0596,Galvantula,"Bug, Electric"
+0597,Ferroseed,"Grass, Steel"
+0598,Ferrothorn,"Grass, Steel"
+0599,Klink,Steel
+0600,Klang,Steel
+0601,Klinklang,Steel
+0602,Tynamo,Electric
+0603,Eelektrik,Electric
+0604,Eelektross,Electric
+0605,Elgyem,Psychic
+0606,Beheeyem,Psychic
+0607,Litwick,"Ghost, Fire"
+0608,Lampent,"Ghost, Fire"
+0609,Chandelure,"Ghost, Fire"
+0610,Axew,Dragon
+0611,Fraxure,Dragon
+0612,Haxorus,Dragon
+0613,Cubchoo,Ice
+0614,Beartic,Ice
+0615,Cryogonal,Ice
+0616,Shelmet,Bug
+0617,Accelgor,Bug
+0618,Stunfisk,"Ground, Electric"
+0618,Stunfisk,"Ground, Steel"
+0619,Mienfoo,Fighting
+0620,Mienshao,Fighting
+0621,Druddigon,Dragon
+0622,Golett,"Ground, Ghost"
+0623,Golurk,"Ground, Ghost"
+0624,Pawniard,"Dark, Steel"
+0625,Bisharp,"Dark, Steel"
+0626,Bouffalant,Normal
+0627,Rufflet,"Normal, Flying"
+0628,Braviary,"Normal, Flying"
+0628,Braviary,"Psychic, Flying"
+0629,Vullaby,"Dark, Flying"
+0630,Mandibuzz,"Dark, Flying"
+0631,Heatmor,Fire
+0632,Durant,"Bug, Steel"
+0633,Deino,"Dark, Dragon"
+0634,Zweilous,"Dark, Dragon"
+0635,Hydreigon,"Dark, Dragon"
+0636,Larvesta,"Bug, Fire"
+0637,Volcarona,"Bug, Fire"
+0638,Cobalion,"Steel, Fighting"
+0639,Terrakion,"Rock, Fighting"
+0640,Virizion,"Grass, Fighting"
+0641,Tornadus,Flying
+0641,Tornadus,Flying
+0642,Thundurus,"Electric, Flying"
+0642,Thundurus,"Electric, Flying"
+0643,Reshiram,"Dragon, Fire"
+0644,Zekrom,"Dragon, Electric"
+0645,Landorus,"Ground, Flying"
+0645,Landorus,"Ground, Flying"
+0646,Kyurem,"Dragon, Ice"
+0647,Keldeo,"Water, Fighting"
+0648,Meloetta,"Normal, Psychic"
+0649,Genesect,"Bug, Steel"
+0649,Genesect,"Bug, Steel"
+0649,Genesect,"Bug, Steel"
+0649,Genesect,"Bug, Steel"
+0649,Genesect,"Bug, Steel"
+0650,Chespin,Grass
+0651,Quilladin,Grass
+0652,Chesnaught,"Grass, Fighting"
+0653,Fennekin,Fire
+0654,Braixen,Fire
+0655,Delphox,"Fire, Psychic"
+0656,Froakie,Water
+0657,Frogadier,Water
+0658,Greninja,"Water, Dark"
+0659,Bunnelby,Normal
+0660,Diggersby,"Normal, Ground"
+0661,Fletchling,"Normal, Flying"
+0662,Fletchinder,"Fire, Flying"
+0663,Talonflame,"Fire, Flying"
+0664,Scatterbug,Bug
+0665,Spewpa,Bug
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0666,Vivillon,"Bug, Flying"
+0667,Litleo,"Fire, Normal"
+0668,Pyroar,"Fire, Normal"
+0668,Pyroar,"Fire, Normal"
+0669,Flabébé,Fairy
+0669,Flabébé,Fairy
+0669,Flabébé,Fairy
+0669,Flabébé,Fairy
+0669,Flabébé,Fairy
+0670,Floette,Fairy
+0670,Floette,Fairy
+0670,Floette,Fairy
+0670,Floette,Fairy
+0670,Floette,Fairy
+0671,Florges,Fairy
+0671,Florges,Fairy
+0671,Florges,Fairy
+0671,Florges,Fairy
+0671,Florges,Fairy
+0672,Skiddo,Grass
+0673,Gogoat,Grass
+0674,Pancham,Fighting
+0675,Pangoro,"Fighting, Dark"
+0676,Furfrou,Normal
+0676,Furfrou,Normal
+0676,Furfrou,Normal
+0676,Furfrou,Normal
+0676,Furfrou,Normal
+0676,Furfrou,Normal
+0676,Furfrou,Normal
+0676,Furfrou,Normal
+0676,Furfrou,Normal
+0676,Furfrou,Normal
+0677,Espurr,Psychic
+0678,Meowstic,Psychic
+0678,Meowstic,Psychic
+0682,Spritzee,Fairy
+0683,Aromatisse,Fairy
+0684,Swirlix,Fairy
+0685,Slurpuff,Fairy
+0686,Inkay,"Dark, Psychic"
+0687,Malamar,"Dark, Psychic"
+0688,Binacle,"Rock, Water"
+0689,Barbaracle,"Rock, Water"
+0690,Skrelp,"Poison, Water"
+0691,Dragalge,"Poison, Dragon"
+0692,Clauncher,Water
+0693,Clawitzer,Water
+0694,Helioptile,"Electric, Normal"
+0695,Heliolisk,"Electric, Normal"
+0696,Tyrunt,"Rock, Dragon"
+0697,Tyrantrum,"Rock, Dragon"
+0698,Amaura,"Rock, Ice"
+0699,Aurorus,"Rock, Ice"
+0700,Sylveon,Fairy
+0701,Hawlucha,"Fighting, Flying"
+0702,Dedenne,"Electric, Fairy"
+0703,Carbink,"Rock, Fairy"
+0704,Goomy,Dragon
+0705,Sliggoo,Dragon
+0706,Goodra,Dragon
+0707,Klefki,"Steel, Fairy"
+0708,Phantump,"Ghost, Grass"
+0709,Trevenant,"Ghost, Grass"
+0710,Pumpkaboo,"Ghost, Grass"
+0710,Pumpkaboo,"Ghost, Grass"
+0710,Pumpkaboo,"Ghost, Grass"
+0710,Pumpkaboo,"Ghost, Grass"
+0711,Gourgeist,"Ghost, Grass"
+0711,Gourgeist,"Ghost, Grass"
+0711,Gourgeist,"Ghost, Grass"
+0711,Gourgeist,"Ghost, Grass"
+0712,Bergmite,Ice
+0713,Avalugg,Ice
+0713,Avalugg,"Ice, Rock"
+0714,Noibat,"Flying, Dragon"
+0715,Noivern,"Flying, Dragon"
+0716,Xerneas,Fairy
+0717,Yveltal,"Dark, Flying"
+0718,Zygarde,"Dragon, Ground"
+0718,Zygarde,"Dragon, Ground"
+0718,Zygarde,"Dragon, Ground"
+0719,Diancie,"Rock, Fairy"
+0719,Diancie,"Rock, Fairy"
+0720,Hoopa,"Psychic, Ghost"
+0720,Hoopa,"Psychic, Dark"
+0722,Rowlet,"Grass, Flying"
+0723,Dartrix,"Grass, Flying"
+0724,Decidueye,"Grass, Ghost"
+0724,Decidueye,"Grass, Fighting"
+0725,Litten,Fire
+0726,Torracat,Fire
+0727,Incineroar,"Fire, Dark"
+0728,Popplio,Water
+0729,Brionne,Water
+0730,Primarina,"Water, Fairy"
+0731,Pikipek,"Normal, Flying"
+0732,Trumbeak,"Normal, Flying"
+0733,Toucannon,"Normal, Flying"
+0734,Yungoos,Normal
+0735,Gumshoos,Normal
+0736,Grubbin,Bug
+0737,Charjabug,"Bug, Electric"
+0738,Vikavolt,"Bug, Electric"
+0739,Crabrawler,Fighting
+0740,Crabominable,"Fighting, Ice"
+0741,Oricorio,"Fire, Flying"
+0741,Oricorio,"Electric, Flying"
+0741,Oricorio,"Psychic, Flying"
+0741,Oricorio,"Ghost, Flying"
+0742,Cutiefly,"Bug, Fairy"
+0743,Ribombee,"Bug, Fairy"
+0744,Rockruff,Rock
+0744,Rockruff,Rock
+0745,Lycanroc,Rock
+0745,Lycanroc,Rock
+0745,Lycanroc,Rock
+0747,Mareanie,"Poison, Water"
+0748,Toxapex,"Poison, Water"
+0751,Dewpider,"Water, Bug"
+0752,Araquanid,"Water, Bug"
+0753,Fomantis,Grass
+0754,Lurantis,Grass
+0755,Morelull,"Grass, Fairy"
+0756,Shiinotic,"Grass, Fairy"
+0757,Salandit,"Poison, Fire"
+0758,Salazzle,"Poison, Fire"
+0759,Stufful,"Normal, Fighting"
+0760,Bewear,"Normal, Fighting"
+0761,Bounsweet,Grass
+0762,Steenee,Grass
+0763,Tsareena,Grass
+0764,Comfey,Fairy
+0765,Oranguru,"Normal, Psychic"
+0766,Passimian,Fighting
+0767,Wimpod,"Bug, Water"
+0768,Golisopod,"Bug, Water"
+0769,Sandygast,"Ghost, Ground"
+0770,Palossand,"Ghost, Ground"
+0775,Komala,Normal
+0776,Turtonator,"Fire, Dragon"
+0777,Togedemaru,"Electric, Steel"
+0779,Bruxish,"Water, Psychic"
+0780,Drampa,"Normal, Dragon"
+0782,Jangmo-o,Dragon
+0783,Hakamo-o,"Dragon, Fighting"
+0784,Kommo-o,"Dragon, Fighting"
+0785,Tapu Koko,"Electric, Fairy"
+0786,Tapu Lele,"Psychic, Fairy"
+0787,Tapu Bulu,"Grass, Fairy"
+0788,Tapu Fini,"Water, Fairy"
+0789,Cosmog,Psychic
+0790,Cosmoem,Psychic
+0791,Solgaleo,"Psychic, Steel"
+0792,Lunala,"Psychic, Ghost"
+0793,Nihilego,"Rock, Poison"
+0794,Buzzwole,"Bug, Fighting"
+0795,Pheromosa,"Bug, Fighting"
+0796,Xurkitree,Electric
+0797,Celesteela,"Steel, Flying"
+0798,Kartana,"Grass, Steel"
+0799,Guzzlord,"Dark, Dragon"
+0800,Necrozma,Psychic
+0800,Necrozma,"Psychic, Steel"
+0800,Necrozma,"Psychic, Ghost"
+0802,Marshadow,"Fighting, Ghost"
+0803,Poipole,Poison
+0804,Naganadel,"Poison, Dragon"
+0805,Stakataka,"Rock, Steel"
+0806,Blacephalon,"Fire, Ghost"
+0808,Meltan,Steel
+0809,Melmetal,Steel
+0810,Grookey,Grass
+0811,Thwackey,Grass
+0812,Rillaboom,Grass
+0813,Scorbunny,Fire
+0814,Raboot,Fire
+0815,Cinderace,Fire
+0816,Sobble,Water
+0817,Drizzile,Water
+0818,Inteleon,Water
+0819,Skwovet,Normal
+0820,Greedent,Normal
+0821,Rookidee,Flying
+0822,Corvisquire,Flying
+0823,Corviknight,"Flying, Steel"
+0831,Wooloo,Normal
+0832,Dubwool,Normal
+0848,Toxel,"Electric, Poison"
+0849,Toxtricity,"Electric, Poison"
+0849,Toxtricity,"Electric, Poison"
+0854,Sinistea,Ghost
+0854,Sinistea,Ghost
+0855,Polteageist,Ghost
+0855,Polteageist,Ghost
+0856,Hatenna,Psychic
+0857,Hattrem,Psychic
+0858,Hatterene,"Psychic, Fairy"
+0862,Obstagoon,"Dark, Normal"
+0863,Perrserker,Steel
+0864,Cursola,Ghost
+0865,Sirfetch'd,Fighting
+0866,Mr. Rime,"Ice, Psychic"
+0867,Runerigus,"Ground, Ghost"
+0870,Falinks,Fighting
+0874,Stonjourner,Rock
+0877,Morpeko,"Electric, Dark"
+0877,Morpeko,"Electric, Dark"
+0885,Dreepy,"Dragon, Ghost"
+0886,Drakloak,"Dragon, Ghost"
+0887,Dragapult,"Dragon, Ghost"
+0888,Zacian,Fairy
+0889,Zamazenta,Fighting
+0893,Zarude,"Dark, Grass"
+0894,Regieleki,Electric
+0895,Regidrago,Dragon
+0899,Wyrdeer,"Normal, Psychic"
+0900,Kleavor,"Bug, Rock"
+0901,Ursaluna,"Ground, Normal"
+0903,Sneasler,"Fighting, Poison"
+0904,Overqwil,"Dark, Poison"
+0905,Enamorus,"Fairy, Flying"
+0906,Sprigatito,Grass
+0907,Floragato,Grass
+0908,Meowscarada,"Grass, Dark"
+0909,Fuecoco,Fire
+0910,Crocalor,Fire
+0911,Skeledirge,"Fire, Ghost"
+0912,Quaxly,Water
+0913,Quaxwell,Water
+0914,Quaquaval,"Water, Fighting"
+0915,Lechonk,Normal
+0916,Oinkologne,Normal
+0916,Oinkologne,Normal
+0919,Nymble,Bug
+0920,Lokix,"Bug, Dark"
+0921,Pawmi,Electric
+0922,Pawmo,"Electric, Fighting"
+0923,Pawmot,"Electric, Fighting"
+0924,Tandemaus,Normal
+0925,Maushold,Normal
+0925,Maushold,Normal
+0926,Fidough,Fairy
+0927,Dachsbun,Fairy
+0928,Smoliv,"Grass, Normal"
+0929,Dolliv,"Grass, Normal"
+0930,Arboliva,"Grass, Normal"
+0935,Charcadet,Fire
+0936,Armarouge,"Fire, Psychic"
+0937,Ceruledge,"Fire, Ghost"
+0938,Tadbulb,Electric
+0939,Bellibolt,Electric
+0944,Shroodle,"Poison, Normal"
+0945,Grafaiai,"Poison, Normal"
+0960,Wiglett,Water
+0961,Wugtrio,Water
+0962,Bombirdier,"Flying, Dark"
+0965,Varoom,"Steel, Poison"
+0966,Revavroom,"Steel, Poison"
+0971,Greavard,Ghost
+0972,Houndstone,Ghost
+0974,Cetoddle,Ice
+0975,Cetitan,Ice
+0979,Annihilape,"Fighting, Ghost"
+0980,Clodsire,"Poison, Ground"
+0996,Frigibax,"Dragon, Ice"
+0997,Arctibax,"Dragon, Ice"
+0998,Baxcalibur,"Dragon, Ice"
+0999,Gimmighoul,Ghost
+1000,Gholdengo,"Steel, Ghost"
