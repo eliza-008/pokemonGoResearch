@@ -1,0 +1,82 @@
+Id,Name,Type,isCharged,Power,Energy Boost,Turns,Energy Cost,Stat Mod,Chance
+200,Fury Cutter,Bug,0,2,4,1,0,"0,0,0,0,0,0",0
+201,Bug Bite,Bug,0,3,3,1,0,"0,0,0,0,0,0",0
+202,Bite,Dark,0,4,2,1,0,"0,0,0,0,0,0",0
+203,Sucker Punch,Dark,0,8,7,2,0,"0,0,0,0,0,0",0
+204,Dragon Breath,Dragon,0,4,3,1,0,"0,0,0,0,0,0",0
+205,Thunder Shock,Electric,0,3,9,2,0,"0,0,0,0,0,0",0
+206,Spark,Electric,0,5,7,2,0,"0,0,0,0,0,0",0
+207,Low Kick,Fighting,0,4,5,2,0,"0,0,0,0,0,0",0
+208,Karate Chop,Fighting,0,5,9,2,0,"0,0,0,0,0,0",0
+209,Ember,Fire,0,7,6,2,0,"0,0,0,0,0,0",0
+210,Wing Attack,Flying,0,5,7,2,0,"0,0,0,0,0,0",0
+211,Peck,Flying,0,6,5,2,0,"0,0,0,0,0,0",0
+212,Lick,Ghost,0,3,3,1,0,"0,0,0,0,0,0",0
+213,Shadow Claw,Ghost,0,6,8,2,0,"0,0,0,0,0,0",0
+214,Vine Whip,Grass,0,5,8,2,0,"0,0,0,0,0,0",0
+215,Razor Leaf,Grass,0,9,4,2,0,"0,0,0,0,0,0",0
+216,Mud Shot,Ground,0,4,8,2,0,"0,0,0,0,0,0",0
+217,Ice Shard,Ice,0,9,10,3,0,"0,0,0,0,0,0",0
+218,Frost Breath,Ice,0,7,5,2,0,"0,0,0,0,0,0",0
+219,Quick Attack,Normal,0,5,8,2,0,"0,0,0,0,0,0",0
+220,Scratch,Normal,0,4,2,1,0,"0,0,0,0,0,0",0
+221,Tackle,Normal,0,3,3,1,0,"0,0,0,0,0,0",0
+222,Pound,Normal,0,4,4,2,0,"0,0,0,0,0,0",0
+223,Cut,Normal,0,3,2,1,0,"0,0,0,0,0,0",0
+224,Poison Jab,Poison,0,7,7,2,0,"0,0,0,0,0,0",0
+225,Acid,Poison,0,6,5,2,0,"0,0,0,0,0,0",0
+226,Psycho Cut,Psychic,0,3,9,2,0,"0,0,0,0,0,0",0
+227,Rock Throw,Rock,0,8,5,2,0,"0,0,0,0,0,0",0
+228,Metal Claw,Steel,0,5,7,2,0,"0,0,0,0,0,0",0
+229,Bullet Punch,Steel,0,6,7,2,0,"0,0,0,0,0,0",0
+230,Water Gun,Water,0,3,3,1,0,"0,0,0,0,0,0",0
+231,Splash,Water,0,0,12,4,0,"0,0,0,0,0,0",0
+232,Water Gun(Blastoise),Water,0,6,4,2,0,"0,0,0,0,0,0",0
+233,Mud-Slap,Ground,0,12,10,3,0,"0,0,0,0,0,0",0
+234,Zen Headbutt,Psychic,0,8,6,3,0,"0,0,0,0,0,0",0
+235,Confusion,Psychic,0,16,12,4,0,"0,0,0,0,0,0",0
+236,Poison Sting,Poison,0,4,9,2,0,"0,0,0,0,0,0",0
+237,Bubble,Water,0,8,11,3,0,"0,0,0,0,0,0",0
+238,Feint Attack,Dark,0,6,6,2,0,"0,0,0,0,0,0",0
+239,Steel Wing,Steel,0,7,6,2,0,"0,0,0,0,0,0",0
+240,Fire Fang,Fire,0,8,5,2,0,"0,0,0,0,0,0",0
+241,Rock Smash,Fighting,0,9,7,3,0,"0,0,0,0,0,0",0
+242,Transform,Normal,0,0,0,3,0,"0,0,0,0,0,0",0
+243,Counter,Fighting,0,8,6,2,0,"0,0,0,0,0,0",0
+244,Powder Snow,Ice,0,5,8,2,0,"0,0,0,0,0,0",0
+249,Charge Beam,Electric,0,5,11,3,0,"0,0,0,0,0,0",0
+250,Volt Switch,Electric,0,12,16,4,0,"0,0,0,0,0,0",0
+253,Dragon Tail,Dragon,0,13,9,3,0,"0,0,0,0,0,0",0
+255,Air Slash,Flying,0,9,9,3,0,"0,0,0,0,0,0",0
+260,Infestation,Bug,0,6,12,3,0,"0,0,0,0,0,0",0
+261,Struggle Bug,Bug,0,9,8,3,0,"0,0,0,0,0,0",0
+263,Astonish,Ghost,0,12,10,3,0,"0,0,0,0,0,0",0
+264,Hex,Ghost,0,6,12,3,0,"0,0,0,0,0,0",0
+266,Iron Tail,Steel,0,10,7,3,0,"0,0,0,0,0,0",0
+269,Fire Spin,Fire,0,11,10,3,0,"0,0,0,0,0,0",0
+271,Bullet Seed,Grass,0,5,13,3,0,"0,0,0,0,0,0",0
+274,Extrasensory,Psychic,0,8,10,3,0,"0,0,0,0,0,0",0
+278,Snarl,Dark,0,5,13,3,0,"0,0,0,0,0,0",0
+281,Hidden Power*,Normal,0,9,8,3,0,"0,0,0,0,0,0",0
+282,Take Down,Normal,0,5,8,3,0,"0,0,0,0,0,0",0
+283,Waterfall,Water,0,12,8,3,0,"0,0,0,0,0,0",0
+287,Yawn,Normal,0,0,12,4,0,"0,0,0,0,0,0",0
+291,Present,Normal,0,3,12,3,0,"0,0,0,0,0,0",0
+297,Smack Down,Rock,0,11,8,3,0,"0,0,0,0,0,0",0
+320,Charm,Fairy,0,15,6,3,0,"0,0,0,0,0,0",0
+325,Lock-On,Normal,0,1,5,1,0,"0,0,0,0,0,0",0
+326,Thunder Fang,Electric,0,8,5,2,0,"0,0,0,0,0,0",0
+327,Ice Fang,Ice,0,8,5,2,0,"0,0,0,0,0,0",0
+345,Gust,Flying,0,16,12,4,0,"0,0,0,0,0,0",0
+346,Incinerate,Fire,0,20,20,5,0,"0,0,0,0,0,0",0
+350,Fairy Wind,Fairy,0,4,9,2,0,"0,0,0,0,0,0",0
+356,Double Kick,Fighting,0,8,12,3,0,"0,0,0,0,0,0",0
+357,Magical Leaf,Grass,0,10,10,3,0,"0,0,0,0,0,0",0
+368,Rollout,Rock,0,8,13,3,0,"0,0,0,0,0,0",0
+373,Water Shuriken,Water,0,6,14,3,0,"0,0,0,0,0,0",0
+385,Leafage,Grass,0,6,7,2,0,"0,0,0,0,0,0",0
+387,Geomancy,Fairy,0,4,13,3,0,"0,0,0,0,0,0",0
+401,Psywave,Psychic,0,3,4,1,0,"0,0,0,0,0,0",0
+402,Metal Sound,Steel,0,3,8,2,0,"0,0,0,0,0,0",0
+403,Sand Attack,Ground,0,2,4,1,0,"0,0,0,0,0,0",0
+462,Force Palm,Fighting,0,13,10,3,0,"0,0,0,0,0,0",0
