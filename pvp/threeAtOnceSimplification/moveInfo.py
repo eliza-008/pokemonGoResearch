@@ -1,6 +1,5 @@
 # Generates csv of moves and their characteristics
-# Maybe make a function eventually thatll just grab move data instead of having to manually do it every time?
-
+import re
 import requests
 from bs4 import BeautifulSoup
 import csv
@@ -43,7 +42,7 @@ if fastMovesTable:
                 moveTurns = columns[10].get_text(strip=True)  
 
                 #fastMoves.append(moveName)
-                writer.writerow([moveId,moveName,moveType,"0",movePower,moveBoost,moveTurns,"0","0,0,0,0,0,0","0"])
+                writer.writerow([moveId,moveName,moveType,"0",movePower,moveBoost,moveTurns,"0","[0, 0, 0, 0, 0, 0]","0"])
 
 # Locate the Charged Attacks table
 for table in tempTable:
@@ -70,27 +69,28 @@ with open("movesData.csv", mode="a", newline="", encoding="utf-8") as file:
             gymEnergyCost = columns[4].get_text(strip=True)
             trainerPower = columns[8].get_text(strip=True)
             trainerEnergyCost = columns[9].get_text(strip=True)
-            statModifier = columns[10].get_text(strip=True)
+            statModifierStr = columns[10].get_text(strip=True)
             statChance = columns[11].get_text(strip=True)
+            # fixing statChance
             statChance = statChance.replace("%","")
             try:
                 statChance = float(statChance) / 100       # Convert to float and divide by 100
             except ValueError:
-                statChance = ""              
-
-            if moveName and moveID:
-                # print(f"""Move: {moveName},
-                #           ID: {moveID}, 
-                #           Type: {moveType},
-                #           Power (Gym/Raid): {gymPower}, 
-                #           Energy (Gym/Raid): {gymEnergyCost}, 
-                #           Power (vs Trainer): {trainerPower}, 
-                #           Energy (vs Trainer): {trainerEnergyCost},
-                #           Stat Modifier: {statModifier},
-                #           Stat Chance: {statChance}""")
+                statChance = "0"              
     
-                # Writing to file inside the `with open(...)` block
-                writer.writerow([moveID, moveName, moveType, "1", trainerPower, "0", "0", trainerEnergyCost, statModifier, statChance])
+            # fixing statMod
+            categories = ["Attack", "Defense", "Speed", "Opponent Attack", "Opponent Defense", "Opponent Speed"]
+            statModifier = [0] * 6  # Initialize all values to 0
+    
+            # Regular expression to find (optional number)(category)
+            pattern = r"(\d*)\s*(Attack|Defense|Speed|Opponent Attack|Opponent Defense|Opponent Speed)"
+            matches = re.findall(pattern, statModifierStr)
 
-# Use this to look at the table in HTML format
-# print(chargedMovesTable.prettify())
+            for num, category in matches:
+                index = categories.index(category)  # Find the category's index
+                statModifier[index] = int(num) if num else 1  # Default to 1 if no number is found
+  
+                
+            writer.writerow([moveID, moveName, moveType, "1", trainerPower, "0", "0", trainerEnergyCost, statModifier, statChance])
+                
+
