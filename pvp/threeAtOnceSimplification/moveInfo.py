@@ -39,7 +39,7 @@ if fastMovesTable:
                 moveType  = columns[2].get_text(strip=True)  
                 movePower = columns[8].get_text(strip=True)  
                 moveBoost = columns[9].get_text(strip=True)  
-                moveTurns = columns[10].get_text(strip=True)  
+                moveTurns = columns[10].get_text(strip=True) + 1
 
                 #fastMoves.append(moveName)
                 writer.writerow([moveId,moveName,moveType,"0",movePower,moveBoost,moveTurns,"0","[0, 0, 0, 0, 0, 0]","0"])
