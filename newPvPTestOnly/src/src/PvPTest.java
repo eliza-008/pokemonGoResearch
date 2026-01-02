@@ -21,7 +21,8 @@ public class PvPTest {
         ArrayList<String> moveNames = new ArrayList<>(), moveTypes = new ArrayList<>(), movePower = new ArrayList<>(),
                 energyCost = new ArrayList<>(), statMod = new ArrayList<>();
         ArrayList<Double> chance = new ArrayList<>();
-        Reader in1 = new FileReader("C:\\Users\\starr\\Downloads\\movesData.csv");
+        //Download related csv file and replace the file name in quotes with the complete file path
+        Reader in1 = new FileReader("movesData.csv");
         Iterable<CSVRecord> records1 = CSVFormat.RFC4180.builder()
                 .setHeader()
                 .setSkipHeaderRecord(true)
@@ -45,7 +46,8 @@ public class PvPTest {
                 pokeFastMoves = new ArrayList<>(), pokeChargedMoves = new ArrayList<>();
         ArrayList<Integer> pokeNum = new ArrayList<>(), pokeStamina = new ArrayList<>(),
                 pokeAttack = new ArrayList<>(), pokeDefense = new ArrayList<>();
-        Reader in3 = new FileReader("C:\\Users\\starr\\Downloads\\new_pokemon_data.csv");
+        //Download related csv file and replace the file name in quotes with the complete file path
+        Reader in3 = new FileReader("new_pokemon_data.csv");
         Iterable<CSVRecord> records3 = CSVFormat.RFC4180.builder()
                 .setHeader()
                 .setSkipHeaderRecord(true)
@@ -65,7 +67,8 @@ public class PvPTest {
 
         ArrayList<Integer> unavailableIds = new ArrayList<>();
         ArrayList<String> unavailableNames = new ArrayList<>(), unavailableTypes = new ArrayList<>();
-        Reader in4 = new FileReader("C:\\Users\\starr\\Downloads\\unavailable_pokemon.csv");
+        //Download related csv file and replace the file name in quotes with the complete file path
+        Reader in4 = new FileReader("unavailable_pokemon.csv");
         Iterable<CSVRecord> records4 = CSVFormat.RFC4180.builder()
                 .setHeader()
                 .setSkipHeaderRecord(true)
@@ -752,4 +755,5 @@ public class PvPTest {
         String noBrackets = str.substring(1, str.length() - 1);
         return noBrackets.split(", ");
     }
+
 }
