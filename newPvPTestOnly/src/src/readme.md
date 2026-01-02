@@ -1,0 +1,1 @@
+Dependencies: Apache Commons CSV, Apache Commons IO, Apache Commons Codec, Apache Commons Math4, Apache Commons Numbers. 3v3 is a work in progress, the Laguerre Solver can't find solutions for L with current formulas.
