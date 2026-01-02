@@ -1,0 +1,76 @@
+Rank,Pokémon,"#",Type,Attack,Defense,Stamina,Fast move,1st Charged move,2nd Charged move,Best Charged move
+1,Mewtwo,150,Psychic,300,182,214,Confusion,Ice Beam,Psystrike,Psystrike
+2,Groudon,383,Ground,270,228,205,Dragon Tail,Solar Beam,Frustration,Solar Beam
+3,Entei,244,Fire,235,171,251,Fire Spin,Flame Charge,Overheat,Overheat
+4,Tornadus Therian Forme,641,Flying,238,189,188,Gust,Heat Wave,Hurricane,Hurricane
+5,Raikou,243,Electric,241,195,207,Volt Switch,Shadow Ball,Thunder,Thunder
+6,Zamazenta Hero of Many Battles,889,Fighting,254,236,192,Snarl,Close Combat,Crunch,Close Combat
+7,Typhlosion,157,Fire,223,173,186,Incinerate,Overheat,Solar Beam,Overheat
+8,Glaceon,471,Ice,238,205,163,Ice Shard,Avalanche,Ice Beam,Avalanche
+9,Gigalith,526,Rock,226,201,198,Smack Down,Heavy Slam,Solar Beam,Solar Beam
+10,Kyogre,382,Water,270,228,205,Waterfall,Avalanche,Hydro Pump,Hydro Pump
+11,Tapu Lele,786,"Psychic, Fairy",259,208,172,Confusion,Draining Kiss,Moonblast,Moonblast
+12,Snorlax,143,Normal,190,169,330,Zen Headbutt,Earthquake,Hyper Beam,Hyper Beam
+13,Darmanitan,555,Fire,263,114,233,Incinerate,Focus Blast,Overheat,Overheat
+14,Cofagrigus,563,Ghost,163,237,151,Astonish,Dark Pulse,Shadow Ball,Shadow Ball
+15,Goodra,706,Dragon,220,242,207,Water Gun,Aqua Tail,Draco Meteor,Draco Meteor
+16,Dondozo,977,Water,176,178,312,Waterfall,Liquidation,Surf,Surf
+17,Regirock,377,Rock,179,309,190,Rock Throw,Stone Edge,Zap Cannon,Stone Edge
+18,Registeel,379,Steel,143,285,190,Rock Smash,Flash Cannon,Focus Blast,Focus Blast
+19,Muk,89,Poison,190,172,233,Infestation,Acid Spray,Gunk Shot,Gunk Shot
+20,Armored Mewtwo,150,Psychic,182,278,214,Confusion,Future Sight,Psystrike,Psystrike
+21,Conkeldurr,534,Fighting,243,158,233,Counter,Focus Blast,Stone Edge,Focus Blast
+22,Dusknoir,477,Ghost,180,254,128,Astonish,Poltergeist,Psychic,Poltergeist
+23,Dudunsparce Two-Segment Form,982,Normal,188,150,268,Dragon Tail,Drill Run,Rock Slide,Drill Run
+24,Regice,378,Ice,179,309,190,Rock Smash,Blizzard,Earthquake,Blizzard
+25,Shaymin Land Forme,492,Grass,210,210,225,Magical Leaf,Energy Ball,Solar Beam,Solar Beam
+26,Rampardos,409,Rock,295,109,219,Smack Down,Outrage,Return,Return
+27,Darkrai,491,Dark,285,198,172,Feint Attack,Dark Pulse,Focus Blast,Focus Blast
+28,Regieleki,894,Electric,250,125,190,Volt Switch,Hyper Beam,Zap Cannon,Zap Cannon
+29,Dudunsparce Three-Segment Form,982,Normal,188,150,268,Astonish,Body Slam,Drill Run,Drill Run
+30,Polteageist Antique Form,855,Ghost,248,189,155,Astonish,Dark Pulse,Shadow Ball,Shadow Ball
+31,Garganacl,934,Rock,171,212,225,Smack Down,Ancient Power,Rock Blast,Ancient Power
+32,Avalugg,713,Ice,196,240,216,Ice Fang,Body Slam,Earthquake,Earthquake
+33,Garbodor,569,Poison,181,164,190,Infestation,Gunk Shot,Seed Bomb,Gunk Shot
+34,Kangaskhan,115,Normal,181,165,233,Mud-Slap,Earthquake,Return,Return
+35,Perrserker,863,Steel,195,162,172,Shadow Claw,Iron Head,Return,Return
+36,Cursola,864,Ghost,253,182,155,Astonish,Night Shade,Power Gem,Night Shade
+37,Melmetal,809,Steel,226,190,264,Thunder Shock,Flash Cannon,Hyper Beam,Flash Cannon
+38,Cetitan,975,Ice,208,123,347,Ice Shard,Body Slam,Superpower,Superpower
+39,Xurkitree,796,Electric,330,144,195,Spark,Discharge,Thunder,Thunder
+40,Beartic,614,Ice,233,152,216,Charm,Ice Punch,Liquidation,Ice Punch
+41,Crocalor,910,Fire,162,134,191,Incinerate,Disarming Voice,Flamethrower,Flamethrower
+42,Bellibolt,939,Electric,184,165,240,Thunder Shock,Discharge,Zap Cannon,Zap Cannon
+43,Druddigon,621,Dragon,213,170,184,Dragon Tail,Dragon Claw,Night Slash,Dragon Claw
+44,Lickilicky,463,Normal,161,181,242,Rollout,Earthquake,Hyper Beam,Hyper Beam
+45,Passimian,766,Fighting,222,160,225,Counter,Brick Break,Close Combat,Close Combat
+46,Vanilluxe,584,Ice,218,184,174,Astonish,Blizzard,Avalanche,Avalanche
+47,Tauros Combat Breed,128,Fighting,210,193,181,Double Kick,Close Combat,Earthquake,Close Combat
+48,Mudsdale,750,Ground,214,174,225,Rock Smash,Bulldoze,Earthquake,Earthquake
+49,Houndstone,972,Ghost,186,195,176,Lick,Dig,Shadow Ball,Shadow Ball
+50,Poipole,803,Poison,145,133,167,Poison Jab,Fell Stinger,Sludge Wave,Sludge Wave
+51,Hariyama,297,Fighting,209,114,302,Force Palm,Dynamic Punch,Superpower,Superpower
+52,Cryogonal,615,Ice,190,218,190,Ice Shard,Solar Beam,Triple Axel,Solar Beam
+53,Floragato,907,Grass,157,128,156,Charm,Grass Knot,Play Rough,Grass Knot
+54,Polteageist Phony Form,855,Ghost,248,189,155,Hex,Dark Pulse,Shadow Ball,Shadow Ball
+55,Stonjourner,874,Rock,222,182,225,Rock Throw,Rock Slide,Stone Edge,Stone Edge
+56,Corvisquire,822,Flying,129,110,169,Peck,Payback,Sky Attack,Sky Attack
+57,Blissey,242,Normal,129,169,496,Zen Headbutt,Dazzling Gleam,Hyper Beam,Hyper Beam
+58,Machamp,68,Fighting,234,159,207,Counter,Close Combat,Cross Chop,Close Combat
+59,Regidrago,895,Dragon,202,101,400,Bite,Dragon Pulse,Outrage,Outrage
+60,Cinderace,815,Fire,238,163,190,Fire Spin,Flame Charge,Focus Blast,Focus Blast
+61,Stoutland,508,Normal,206,182,198,Ice Fang,Crunch,Wild Charge,Wild Charge
+62,Kubfu,891,Fighting,170,112,155,Counter,Close Combat,Dynamic Punch,Close Combat
+63,Charcadet,935,Fire,92,74,120,Incinerate,Flame Charge,Flamethrower,Flamethrower
+64,Exploud,295,Normal,179,137,232,Astonish,Boomburst,Crunch,Boomburst
+65,Donphan,232,Ground,214,185,207,Mud-Slap,Body Slam,Earthquake,Earthquake
+66,Rillaboom,812,Grass,239,168,225,Scratch,Earth Power,Grass Knot,Grass Knot
+67,Swalot,317,Poison,140,159,225,Rock Smash,Gunk Shot,Sludge Bomb,Gunk Shot
+68,Spidops,918,Bug,139,166,155,Counter,Grass Knot,X-Scissor,X-Scissor
+69,Heatmor,631,Fire,204,129,198,Fire Spin,Flamethrower,Power-Up Punch,Flamethrower
+70,Haxorus,612,Dragon,284,172,183,Dragon Tail,Dragon Claw,Earthquake,Dragon Claw
+71,Eldegoss,830,Grass,148,211,155,Bullet Seed,Energy Ball,Grass Knot,Grass Knot
+72,Regigigas,486,Normal,287,210,221,Zen Headbutt,Focus Blast,Giga Impact,Giga Impact
+73,Seviper,336,Poison,196,118,177,Poison Jab,Crunch,Poison Fang,Crunch
+74,Nymble,919,Bug,81,65,107,Struggle Bug,Bug Buzz,Trailblaze,Bug Buzz
+75,Grimmsnarl,861,"Dark, Fairy",227,139,216,Sucker Punch,Dark Pulse,Foul Play,Dark Pulse
