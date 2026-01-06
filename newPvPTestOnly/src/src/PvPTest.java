@@ -12,7 +12,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
-
+//Program for regions 1-5, 7-9, and 12-16
 public class PvPTest {
     public static void main(String[] args) throws Exception {
         //Store info from csv file columns into their own ArrayLists, casting info to correct types
@@ -21,8 +21,7 @@ public class PvPTest {
         ArrayList<String> moveNames = new ArrayList<>(), moveTypes = new ArrayList<>(), movePower = new ArrayList<>(),
                 energyCost = new ArrayList<>(), statMod = new ArrayList<>();
         ArrayList<Double> chance = new ArrayList<>();
-        //Download related csv file and replace the file name in quotes with the complete file path
-        Reader in1 = new FileReader("movesData.csv");
+        Reader in1 = new FileReader("C:\\Users\\starr\\Downloads\\movesData.csv");
         Iterable<CSVRecord> records1 = CSVFormat.RFC4180.builder()
                 .setHeader()
                 .setSkipHeaderRecord(true)
@@ -46,8 +45,7 @@ public class PvPTest {
                 pokeFastMoves = new ArrayList<>(), pokeChargedMoves = new ArrayList<>();
         ArrayList<Integer> pokeNum = new ArrayList<>(), pokeStamina = new ArrayList<>(),
                 pokeAttack = new ArrayList<>(), pokeDefense = new ArrayList<>();
-        //Download related csv file and replace the file name in quotes with the complete file path
-        Reader in3 = new FileReader("new_pokemon_data.csv");
+        Reader in3 = new FileReader("C:\\Users\\starr\\Downloads\\new_pokemon_data.csv");
         Iterable<CSVRecord> records3 = CSVFormat.RFC4180.builder()
                 .setHeader()
                 .setSkipHeaderRecord(true)
@@ -67,8 +65,7 @@ public class PvPTest {
 
         ArrayList<Integer> unavailableIds = new ArrayList<>();
         ArrayList<String> unavailableNames = new ArrayList<>(), unavailableTypes = new ArrayList<>();
-        //Download related csv file and replace the file name in quotes with the complete file path
-        Reader in4 = new FileReader("unavailable_pokemon.csv");
+        Reader in4 = new FileReader("C:\\Users\\starr\\Downloads\\unavailable_pokemon.csv");
         Iterable<CSVRecord> records4 = CSVFormat.RFC4180.builder()
                 .setHeader()
                 .setSkipHeaderRecord(true)
@@ -257,7 +254,7 @@ public class PvPTest {
                                                 typeAdv *= typeAdvs[pokeIndex2][k1];
                                             }
                                             double dpt_f = poke.attack * fast.power * typeAdv * (f_STAB / 2)
-                                                    + 0.5;
+                                                    + 1;
                                             dpt += dpt_f;
                                             double dpt_c1, dpt_c2;
                                             double dmg_c1 = poke.attack * charged1.power * typeAdv * (c1_STAB / 2) + 0.5;
@@ -295,7 +292,7 @@ public class PvPTest {
             }
         }
 
-        System.out.println("Initial number of mons: " +  mons.size());
+        System.out.println("Initial number of mons: " + mons.size());
 
         //Mark the Pokemon that are worse than others of the same type
         for (int i = 0; i < mons.size(); i++) {
@@ -331,22 +328,9 @@ public class PvPTest {
 
         System.out.println("Number of mons after removing: " + mons.size());
 
-        //Keep Pokemon with their best movesets only
-        for (int k = 0; k < 3; k++) {
-            for (int i = 0; i < mons.size(); i++) {
-                for (int j = i + 1; j < mons.size(); j++) {
-                    if (mons.get(j).poke.name.equals(mons.get(i).poke.name)) {
-                        mons.remove(j);
-                    }
-                }
-            }
-        }
-
-        System.out.println("Number of mons with their best movesets: " + mons.size());
-
         final String FILE_NAME = "1v1_results.csv";
         final String[] HEADERS = {"Rank", "Pokemon", "#", "Type", "Attack", "Defense", "Stamina", "Fast move", "1st Charged move",
-        "2nd Charged move", "Best Charged move"};
+                "2nd Charged move", "Best Charged move"};
         // Data to write (can be a List<List<Object>> or List<Object[]> or List<YourObject>)
         List<Object[]> monsInfo = new ArrayList<>();
         int rankNum = 1;
@@ -357,8 +341,7 @@ public class PvPTest {
             monInfo[2] = mon.poke.id;
             if (!mon.poke.type2.equals("null")) {
                 monInfo[3] = mon.poke.type1 + ", " + mon.poke.type2;
-            }
-            else {
+            } else {
                 monInfo[3] = mon.poke.type1;
             }
             monInfo[4] = mon.poke.attack;
@@ -374,24 +357,21 @@ public class PvPTest {
         CSVFormat format = CSVFormat.EXCEL.builder()
                 .setHeader(HEADERS).get();
         // Use try-with-resources to ensure the writer and printer are closed automatically
-        try(
+        try (
                 BufferedWriter writer = Files.newBufferedWriter(Paths.get(FILE_NAME));
                 CSVPrinter csvPrinter = new CSVPrinter(writer, format)
-        )
-        {// Write individual records
+        ) {// Write individual records
             for (Object[] record : monsInfo) {
                 csvPrinter.printRecord(record);
             }
             // The writer is automatically flushed and closed by the try-with-resources block
             System.out.println("CSV file created successfully at: " + FILE_NAME);
 
-        }
-        catch(IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
-        //for reference only, shows how our 16 results are ordered
+        //for reference only, shows how our 16 results are ordered from region 1 to 16
         String[][] solutions = {{"atkStage > 4 & defStage > 4", "atkStage > 4 & 0 <= defStage <= 4",
                 "atkStage > 4 & -4 < defStage < 0", "atkStage > 4 & defStage <= -4"}, {"0 <= atkStage <= 4 & defStage > 4",
                 "0 <= atkStage <= 4 & 0 <= defStage <= 4", "0 <= atkStage <= 4 & -4 < defStage < 0", "0 <= atkStage <= 4" +
@@ -417,12 +397,12 @@ public class PvPTest {
                                     int[][] twoSetsOfL = setsOfL(v, w, types, typeAdvs);
                                     int[] vL = twoSetsOfL[0], wL = twoSetsOfL[1];
                                     int longestVL = vL[0], longestWL = wL[0];
-                                    for (Integer L : vL) {
+                                    for (int L : vL) {
                                         if (L > longestVL) {
                                             longestVL = L;
                                         }
                                     }
-                                    for (Integer L : wL) {
+                                    for (int L : wL) {
                                         if (L > longestWL) {
                                             longestWL = L;
                                         }
@@ -448,72 +428,38 @@ public class PvPTest {
         List<Object> objectsList = new ArrayList<>(threeVThreeData);
 
         // Use try-with-resources to ensure the writer and printer are closed automatically
-        try(
+        try (
                 BufferedWriter writer = Files.newBufferedWriter(Paths.get(FILE_NAME1));
                 CSVPrinter csvPrinter = new CSVPrinter(writer, CSVFormat.EXCEL)
-        )
-        {// Write individual records
+        ) {// Write individual records
             for (Object record : objectsList) {
                 csvPrinter.printRecord(record);
             }
             // The writer is automatically flushed and closed by the try-with-resources block
             System.out.println("CSV file created successfully at: " + FILE_NAME1);
 
-        }
-        catch(IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    //To avoid having two sets of the same process to compute L
+    //To avoid having two sets of the same process to compute L for every individual matchup in a 3v3 battle
     public static int[][] setsOfL(Mon[] v, Mon[] w, String[] types,
                                       double[][] typeAdvs) {
         int[] vL = new int[9], wL = new int[9];
         int[][] array = {vL, wL};
         for (int i = 0; i < 3; i++) {
-            int indexvL = 0, indexwL = 0;
+            int index = 0;
             for (int j = 0; j < 3; j++) {
-                //lPrime is a simplified version of L needed for stat buffs
-                int lPrimeW = lPrime(v[i], w[j], types, typeAdvs), lPrimeV = lPrime(w[j], v[i], types, typeAdvs), lPrime;
-                lPrime = Math.min(lPrimeW, lPrimeV);
-                int atkStageVi = atkStatStage(v[i], w[j], lPrime), atkStageWj = atkStatStage(w[j], v[i], lPrime);
-                int defStageVi = defStatStage(v[i], w[j], lPrime), defStageWj = defStatStage(w[j], v[i], lPrime);
-                double atkMultVi = statMultiplier(atkStageVi), atkMultWj = statMultiplier(atkStageWj);
-                double defMultVi = statMultiplier(defStageVi), defMultWj = statMultiplier(defStageWj);
                 //How long until mon vi is defeated
-                int lV = lengthOfBattle(w[j], v[i], atkMultWj, defMultVi, atkStageWj, defStageVi, lPrime, types, typeAdvs);
+                int lV = lengthOfBattle(w[j], v[i], types, typeAdvs);
                 //How long until mon wj is defeated
-                int lW = lengthOfBattle(v[i], w[j], atkMultVi, defMultWj, atkStageVi, defStageWj, lPrime, types, typeAdvs);
-                vL[indexvL] = lV; wL[indexwL] = lW;
-                indexvL++;
-                indexwL++;
+                int lW = lengthOfBattle(v[i], w[j], types, typeAdvs);
+                vL[index] = lV; wL[index] = lW;
+                index++;
             }
         }
         return array;
-    }
-    //simplified model of how long it takes to defeat mon2, for use in the stat stage function
-    public static int lPrime(Mon mon1, Mon mon2, String[] types, double[][] typeAdvs) {
-        Pokemon poke1 = mon1.poke, poke2 = mon2.poke;
-        Move fast = mon1.fast, charged1 = mon1.charged, charged2 = mon2.charged;
-        String type1 = poke1.type1, type2 = poke1.type2, type3 = poke2.type1, type4 = poke2.type2, fastType = fast.type,
-                chargedType = charged1.type;
-        int energy_f = fast.energyGen, energy_c = charged1.cost, turns_f = fast.turns, stam = poke1.stamina,
-                atk = poke1.attack, def = poke2.defense, p_f = fast.power, p_c = charged1.power, lPrime;
-        double stab_f = 1, stab_c = 1, typeAdv = typeAdvantage(type1, type2, type3, type4, types, typeAdvs);
-        if (Objects.equals(type1, fastType) | Objects.equals(type2, fastType)) {stab_f = 1.2;}
-        if (Objects.equals(type1, chargedType) | Objects.equals(type2, chargedType)) {stab_c = 1.2;}
-        int dmg_f = (int) Math.floor((atk/(double) def) * p_f * stab_f * typeAdv);
-        int dmg_c = (int) Math.floor((atk/(double) def) * p_c * stab_c * typeAdv);
-        if (energy_c == 100) {
-            lPrime = (int) Math.ceil(stam / ((dmg_f /(double) fast.turns) + (1 / (Math.floor(energy_c /(double) energy_f)
-                    * fast.turns)) * dmg_c));
-        }
-        else {
-            lPrime = (int) Math.floor(stam / ((dmg_f /(double) fast.turns) + (energy_f /(double)(energy_c * fast.turns))
-                    * dmg_c));
-        }
-        return lPrime;
     }
     public static double typeAdvantage(String type1, String type2, String type3, String type4, String[] types,
                                        double[][] typeAdvs) {
@@ -531,214 +477,186 @@ public class PvPTest {
         if (index2 < 18 && index4 < 18) {typeAdv *= typeAdvs[index2][index4];}
         return typeAdv;
     }
-    public static int atkStatStage(Mon mon1, Mon mon2, int lPrime) {
-        //average of the effects from mon1 and mon2's charged moves
-        return (int) Math.floor(((mon1.charged.chanceMod * mon1.charged.multipliers()[0] * ((Math.pow(lPrime, 2)
-                + lPrime) / (2 * (mon1.charged.cost / (double)(mon1.fast.energyGen * mon1.fast.turns)))
-                - (lPrime + 1) / 2.0)) + (mon2.charged.chanceMod * mon2.charged.multipliers()[2] * ((Math.pow(lPrime, 2)
-                + lPrime) / (2 * (mon2.charged.cost / (double)(mon2.fast.energyGen * mon2.fast.turns)))
-                - (lPrime + 1) / 2.0))) / 2.0);
-    }
-    public static int defStatStage(Mon mon1, Mon mon2, int lPrime) {
-        //average of the effects from mon1 and mon2's charged moves
-        return (int) Math.floor(((mon1.charged.chanceMod * mon1.charged.multipliers()[1] * ((Math.pow(lPrime, 2)
-                + lPrime) / (2 * (mon1.charged.cost / (double)(mon1.fast.energyGen * mon1.fast.turns)))
-                - (lPrime + 1) / 2.0)) + (mon2.charged.chanceMod * mon2.charged.multipliers()[3] * ((Math.pow(lPrime, 2)
-                + lPrime) / (2 * (mon2.charged.cost / (double)(mon2.fast.energyGen * mon2.fast.turns)))
-                - (lPrime + 1) / 2.0))) / 2.0);
-    }
-    public static double statMultiplier(int statStage) {
-        double multiplier = 1;
-        if (statStage > 4) {multiplier = 2;}
-        if (statStage >= 0 && statStage <= 4) {multiplier += 0.25 * statStage;}
-        if (statStage > -4 && statStage < 0) {multiplier = -(statStage / (double)(statStage - 4));}
-        if (statStage <= -4) {multiplier = 0.5;}
-        return multiplier;
-    }
     public static double STAB(Mon mon, Move move) {
         double stab = 1;
         if (Objects.equals(mon.poke.type1, move.type) | Objects.equals(mon.poke.type2, move.type)) {stab = 1.2;}
         return stab;
     }
 
-    //The method primarily called to find the length L of battles, accounts for all regions
-    public static int lengthOfBattle(Mon mon1, Mon mon2, double mAtk, double mDef, int atkStage, int defStage, int lPrime,
-                                     String[] types, double[][] typeAdvs) {
-        int length = 0;
-        //Regions 6, 10, 11 (Where the matlab solver had no solutions)
-        if ((atkStage >= 0 && atkStage <= 4 && defStage >= 0 && defStage <= 4) | (atkStage > -4 && atkStage < 0
-                && defStage >= 0 && defStage <= 4) | (atkStage > -4 && atkStage < 0 && defStage > -4 && defStage < 0)) {
-            double typeAdv = typeAdvantage(mon1.poke.type1, mon1.poke.type2, mon2.poke.type1, mon2.poke.type2, types,
-                    typeAdvs);
-            int dmg_f = (int) Math.floor(((mon1.poke.attack * mAtk) / (mon2.poke.defense * mDef) * mon1.fast.power
-                    * STAB(mon1, mon1.fast) * typeAdv));
-            int dmg_c = (int) Math.floor(((mon1.poke.attack * mAtk) / (mon2.poke.defense * mDef) * mon1.charged.power
-                    * STAB(mon1, mon2.fast) * typeAdv));
-            double r_cs;
-            if (mon1.charged.cost == 100) {
-                r_cs = 1 / (Math.ceil(mon1.charged.cost / (double) mon1.fast.energyGen) * mon1.fast.turns);
-            }
-            else {
-                r_cs = mon1.fast.energyGen / (double) (mon1.charged.cost * mon1.fast.turns);
-            }
-            double r_us = (lPrime * r_cs - 2/3.0) / (lPrime * r_cs);
-            double mu = r_cs * r_us;
-            double dpt_f = dmg_f / (double) mon1.fast.turns, dpt_c = mu * dmg_c;
-            double dpt = dpt_f + dpt_c;
-            length = (int) Math.floor(mon2.poke.stamina / dpt);}
+    //The method primarily called to find the length L of a battle, accounts for 13 of 16 regions
+    //Returns the min L of all Ls computed
+    public static int lengthOfBattle(Mon mon1, Mon mon2, String[] types, double[][] typeAdvs) {
+        int n, L1 = 0, L2 = 0, L3 = 0, L4 = 0, L5 = 0, L6 = 0, L7 = 0, L8 = 0, L9 = 0, L10 = 0, L11 = 0,
+                L12 = 0, L13 = 0;
         //Define all the variables used in the calculations below
         int def = mon2.poke.defense, hp = mon2.poke.stamina, tc = (int) Math.floor(mon1.charged.cost /
                 (double)(mon1.fast.energyGen * mon1.fast.turns)), tf = mon1.fast.turns, atk = mon1.poke.attack,
                 pf = mon1.fast.power, pc = mon1.charged.power;
         double dA = mon1.charged.multipliers()[0], dB = mon1.charged.multipliers()[3], pa = mon1.charged.chanceMod,
-                pb = mon1.charged.chanceMod;
+                pb = mon1.charged.chanceMod, adv = typeAdvantage(mon1.poke.type1, mon1.poke.type2, mon2.poke.type1,
+                mon2.poke.type2, types, typeAdvs);
         //3, 5, 7, 8, 15: Solve for L for regions with solutions in the form of (P(z), z, k), where z is L
         //Region 3
-        if (atkStage > 4 && defStage > -4 && defStage < 0) {
-            //Coefficients of the polynomial's terms are used to get L
-            double a = atk*dB*pb*pf*tc + atk*dB*pb*pc*tf;
-            double b = - atk*dB*pb*pf*tc*tc - atk*dB*pb*pc*tc*tf + atk*dB*pb*pf*tc + atk*dB*pb*pc*tf;
-            double c = - atk*dB*pb*pf*tc*tc - atk*dB*pb*pc*tc*tf - 8*atk*pf*tc*tc - 8*atk*pc*tc*tf;
-            double d = + 8*def*hp*tc*tc*tf;
-            Solve solver = new Solve(d, c, b, a);
-            length = solver.getSolution();
+        for (n = 1; n <= 13; n++) {
+            if (n == 1) {
+                //Coefficients of the polynomial's terms are used to get L
+                double a = atk * dB * pb * pf * adv * tc + atk * dB * pb * pc * adv * tf;
+                double b = -atk * dB * pb * pf * adv * tc * tc - atk * dB * pb * pc * adv * tc * tf + atk * dB * pb * pf * adv * tc + atk 
+                        * dB * pb * pc * adv * tf;
+                double c = -atk * dB * pb * pf * adv * tc * tc - atk * dB * pb * pc * adv * tc * tf - 8 * atk * pf * adv * tc * tc - 8 * atk * pc * adv * tc * tf;
+                double d = +8 * def * hp * tc * tc * tf;
+                Solve solver = new Solve(d, c, b, a);
+                L1 = solver.getSolution();
+            }
+            //Region 5
+            if (n == 2) {
+                double a = atk * dA * pa * pf * adv * tc + atk * dA * pa * pc * adv * tf;
+                double b = -atk * dA * pa * pf * adv * tc * tc - atk * dA * pa * pc * adv * tc * tf + atk * dA * pa * pf * adv * tc + atk * dA * pa * pc * adv * tf;
+                double c = -atk * dA * pa * pf * adv * tc * tc - atk * dA * pa * pc * adv * tc * tf + 8 * atk * pf * adv * tc * tc + 8 * atk * pc * adv * tc * tf;
+                double d = -32 * def * hp * tc * tc * tf;
+                Solve solver = new Solve(d, c, b, a);
+                L2 = solver.getSolution();
+            }
+            //Region 7
+            if (n == 3) {
+                /*double a = atk * dA * pa * pf * adv * tc + atk * dA * pa * pc * adv * tf;
+                double b = -atk * dA * pa * pf * adv * tc * tc - atk * dA * pa * pc * adv * tc * tf + atk * dA * pa * pf * adv * tc + atk * dA * pa * pc * adv * tf;
+                double c = -atk * dA * pa * pf * adv * tc * tc - atk * dA * pa * pc * adv * tc * tf + 8 * atk * pf * adv * tc * tc + 8 * atk * pc * adv * tc * tf;
+                double d = -8 * def * hp * tc * tc * tf;
+                Solve solver = new Solve(d, c, b, a);
+                L3 = solver.getSolution();*/
+                L3 = -1;
+            }
+            //Region 8
+            if (n == 4) {
+                double a = atk * dA * pa * pf * adv * tc + atk * dA * pa * pc * adv * tf;
+                double b = -atk * dA * pa * pf * adv * tc * tc - atk * dA * pa * pc * adv * tc * tf + atk * dA * pa * pf * adv * tc + atk * dA * pa * pc * adv * tf;
+                double c = -atk * dA * pa * pf * adv * tc * tc - atk * dA * pa * pc * adv * tc * tf + 8 * atk * pf * adv * tc * tc + 8 * atk * pc * adv * tc * tf;
+                double d = -8 * def * hp * tc * tc * tf;
+                Solve solver = new Solve(d, c, b, a);
+                L4 = solver.getSolution();
+            }
+            //Region 15
+            if (n == 5) {
+                double a = atk * dB * pb * pf * adv * tc + atk * dB * pb * pc * adv * tf;
+                double b = -atk * dB * pb * pf * adv * tc * tc - atk * dB * pb * pc * adv * tc * tf + atk * dB * pb * pf * adv * tc + atk * dB * pb * pc * adv * tf;
+                double c = -atk * dB * pb * pf * adv * tc * tc - atk * dB * pb * pc * adv * tc * tf - 8 * atk * pf * adv * tc * tc - 8 * atk * pc * adv * tc * tf;
+                double d = 32 * def * hp * tc * tc * tf;
+                Solve solver = new Solve(d, c, b, a);
+                L5 = solver.getSolution();
+            }
+            //Where the equations for L are algebraic equations
+            //Region 1
+            if (n == 6) {
+                L6 = (int) Math.floor((2 * def * hp * tc * tf) / (atk * pc * adv * tf + atk * pf * adv * tc));
+            }
+            //Region 2
+            if (n == 7) {
+                int length1 = (int) Math.floor((Math.sqrt(64 * atk * atk * pc * adv * pc * adv * tc * tc * tf * tf
+                        + 128 * atk * atk * pc * adv * pf * adv * tc * tc * tc * tf + 64 * atk * atk * pf * adv * pf * adv * tc * tc * tc * tc
+                        + 16 * atk * dB * def * hp * pb * pc * adv * tc * tc * tc * tf * tf - 16 * atk * dB * def * hp * pb * pc * adv * tc * tc * tf * tf
+                        + 16 * atk * dB * def * hp * pb * pf * adv * tc * tc * tc * tc * tf - 16 * atk * dB * def * hp * pb * pf * adv * tc * tc * tc * tf
+                        + dB * dB * def * def * hp * hp * pb * pb * tc * tc * tc * tc * tf * tf
+                        + 2 * dB * dB * def * def * hp * hp * pb * pb * tc * tc * tc * tf * tf
+                        + dB * dB * def * def * hp * hp * pb * pb * tc * tc * tf * tf
+                        - 32 * dB * def * def * hp * hp * pb * tc * tc * tc * tf * tf) + 8 * atk * pc * adv * tc * tf
+                        + 8 * atk * pf * adv * tc * tc - dB * def * hp * pb * tc * tf + dB * def * hp * pb * tc * tc * tf) / (2 * dB * def * hp * pb * tc * tf));
+                int length2 = (int) Math.floor((8 * atk * pc * adv * tc * tf - Math.sqrt(64 * atk * atk * pc * adv * pc * adv * tc * tc * tf * tf
+                        + 128 * atk * atk * pc * adv * pf * adv * tc * tc * tc * tf + 64 * atk * atk * pf * adv * pf * adv * tc * tc * tc * tc
+                        + 16 * atk * dB * def * hp * pb * pc * adv * tc * tc * tc * tf * tf - 16 * atk * dB * def * hp * pb * pc * adv * tc * tc * tf * tf
+                        + 16 * atk * dB * def * hp * pb * pf * adv * tc * tc * tc * tc * tf - 16 * atk * dB * def * hp * pb * pf * adv * tc * tc * tc * tf
+                        + dB * dB * def * def * hp * hp * pb * pb * tc * tc * tc * tc * tf * tf
+                        + 2 * dB * dB * def * def * hp * hp * pb * pb * tc * tc * tc * tf * tf
+                        + dB * dB * def * def * hp * hp * pb * pb * tc * tc * tf * tf
+                        - 32 * dB * def * def * hp * hp * pb * tc * tc * tc * tf * tf) + 8 * atk * pf * adv * tc * tc
+                        - dB * def * hp * pb * tc * tf + dB * def * hp * pb * tc * tc * tf) / (2 * dB * def * hp * pb * tc * tf));
+                L7 = Math.min(length1, length2);
+            }
+            //Region 4
+            if (n == 8) {
+                L8 = (int) Math.floor((def * hp * tc * tf) / (2 * atk * pc * adv * tf + 2 * atk * pf * adv * tc));
+            }
+            //Region 9
+            if (n == 9) {
+                L9 = (int) -Math.floor((Math.sqrt(4 * atk * atk * pc * adv * pc * adv * tc * tc * tf * tf + 8 * atk * atk *
+                        pc * adv * pf * adv * tc * tc * tc * tf + 4 * atk * atk * pf * adv * pf * adv * tc * tc * tc * tc
+                        - 4 * atk * dA * def * hp * pa * pc * adv * tc * tc * tc * tf * tf + 4 * atk * dA * def * hp * pa * pc * adv * tc * tc * tf * tf
+                        - 4 * atk * dA * def * hp * pa * pf * adv * tc * tc * tc * tc * tf + 4 * atk * dA * def * hp * pa * pf * adv * tc * tc * tc * tf
+                        + dA * dA * def * def * hp * hp * pa * pa * tc * tc * tc * tc * tf * tf
+                        + 2 * dA * dA * def * def * hp * hp * pa * pa * tc * tc * tc * tf * tf
+                        + dA * dA * def * def * hp * hp * pa * pa * tc * tc * tf * tf
+                        + 32 * dA * def * def * hp * hp * pa * tc * tc * tc * tf * tf) + 2 * atk * pc * adv * tc * tf
+                        + 2 * atk * pf * adv * tc * tc + dA * def * hp * pa * tc * tf - dA * def * hp * pa * tc * tc * tf) / (2 * dA * def * hp * pa * tc * tf) - (2 * atk * pc * adv * tc * tf
+                        - Math.sqrt((4 * atk * atk * pc * adv * pc * adv * tc * tc * tf * tf + 8 * atk * atk * pc
+                        * pf * adv * tc * tc * tc * tf + 4 * atk * atk * pf * adv * pf * adv * tc * tc * tc * tc
+                        - 4 * atk * dA * def * hp * pa * pc * adv * tc * tc * tc * tf * tf + 4 * atk * dA * def * hp * pa * pc * adv * tc * tc * tf * tf
+                        - 4 * atk * dA * def * hp * pa * pf * adv * tc * tc * tc * tc * tf + 4 * atk * dA * def * hp * pa * pf * adv * tc * tc * tc * tf
+                        + dA * dA * def * def * hp * hp * pa * pa * tc * tc * tc * tc * tf * tf
+                        + 2 * dA * dA * def * def * hp * hp * pa * pa * tc * tc * tc * tf * tf
+                        + dA * dA * def * def * hp * hp * pa * pa * tc * tc * tf * tf
+                        + 32 * dA * def * def * hp * hp * pa * tc * tc * tc * tf * tf) + 2 * atk * pf * adv * tc * tc
+                        + dA * def * hp * pa * tc * tf - dA * def * hp * pa * tc * tc * tf) / (2 * dA * def * hp * pa * tc * tf)));
+            }
+            //Region 12
+            if (n == 10) {
+                L10 = (int) -((Math.sqrt(64 * atk * atk * pc * adv * pc * adv * tc * tc * tf * tf + 128 * atk * atk * pc * adv * pf * adv * tc
+                        * tc * tc * tf + 64 * atk * atk * pf * adv * pf * adv * tc * tc * tc * tc - 16 * atk * dA * def
+                        * hp * pa * pc * adv * tc * tc * tc * tf * tf + 16 * atk * dA * def * hp * pa * pc * adv * tc * tc * tf * tf - 16 * atk * dA
+                        * def * hp * pa * pf * adv * tc * tc * tc * tc * tf + 16 * atk * dA * def * hp * pa * pf * adv * tc * tc * tc * tf
+                        + dA * dA * def * def * hp * hp * pa * pa * tc * tc * tc * tc * tf * tf
+                        + 2 * dA * dA * def * def * hp * hp * pa * pa * tc * tc * tc * tf * tf
+                        + dA * dA * def * def * hp * hp * pa * pa * tc * tc * tf * tf
+                        + 32 * dA * def * def * hp * hp * pa * tc * tc * tc * tf * tf) + 8 * atk * pc * adv * tc * tf + 8 * atk * pf * adv * tc * tc
+                        + dA * def * hp * pa * tc * tf - dA * def * hp * pa * tc * tc * tf) / (2 * dA * def * hp * pa * tc * tf) - (8 * atk * pc * adv * tc * tf
+                        - Math.sqrt(64 * atk * atk * pc * adv * pc * adv * tc * tc * tf * tf + 128 * atk * atk * pc * adv * pf * adv * tc * tc * tc * tf
+                        + 64 * atk * atk * pf * adv * pf * adv * tc * tc * tc * tc - 16 * atk * dA * def * hp * pa * pc * adv * tc * tc * tc
+                        * tf * tf + 16 * atk * dA * def * hp * pa * pc * adv * tc * tc * tf * tf - 16 * atk * dA * def * hp * pa * pf * adv * tc * tc * tc * tc * tf
+                        + 16 * atk * dA * def * hp * pa * pf * adv * tc * tc * tc * tf + dA * dA * def * def * hp * hp
+                        * pa * pa * tc * tc * tc * tc * tf * tf + 2 * dA * dA * def * def
+                        * hp * hp * pa * pa * tc * tc * tc * tf * tf + dA * dA * def * def
+                        * hp * hp * pa * pa * tc * tc * tf * tf + 32 * dA * def * def * hp * hp
+                        * pa * tc * tc * tc * tf * tf) + 8 * atk * pf * adv * tc * tc + dA * def * hp * pa * tc * tf - dA * def * hp * pa * tc * tc * tf) / (2 * dA * def * hp * pa * tc * tf));
+            }
+            //Region 13
+            if (n == 11) {
+                L11 = (int) Math.floor((8 * def * hp * tc * tf) / (atk * pc * adv * tf + atk * pf * adv * tc));
+            }
+            //Region 14
+            if (n == 12) {
+                int length1 = (int) Math.floor((Math.sqrt(4 * atk * atk * pc * adv * pc * adv * tc * tc * tf * tf + 8 * atk * atk * pc * adv * pf * adv * tc * tc * tc * tf
+                        + 4 * atk * atk * pf * adv * pf * adv * tc * tc * tc * tc + 4 * atk * dB * def * hp * pb * pc * adv * tc * tc * tc * tf * tf
+                        - 4 * atk * dB * def * hp * pb * pc * adv * tc * tc * tf * tf + 4 * atk * dB * def * hp * pb * pf * adv * tc * tc * tc * tc * tf
+                        - 4 * atk * dB * def * hp * pb * pf * adv * tc * tc * tc * tf + dB * dB * def * def * hp * hp
+                        * pb * pb * tc * tc * tc * tc * tf * tf + 2 * dB * dB * def * def
+                        * hp * hp * pb * pb * tc * tc * tc * tf * tf + dB * dB * def * def
+                        * hp * hp * pb * pb * tc * tc * tf * tf - 32 * dB * def * def * hp * hp
+                        * pb * tc * tc * tc * tf * tf) + 2 * atk * pc * adv * tc * tf + 2 * atk * pf * adv * tc * tc - dB * def * hp * pb * tc * tf
+                        + dB * def * hp * pb * tc * tc * tf) / (2 * dB * def * hp * pb * tc * tf));
+                int length2 = (int) ((2 * atk * pc * adv * tc * tf - Math.sqrt(4 * atk * atk * pc * adv * pc * adv * tc * tc * tf * tf
+                        + 8 * atk * atk * pc * adv * pf * adv * tc * tc * tc * tf + 4 * atk * atk * pf * adv * pf * adv * tc * tc * tc * tc
+                        + 4 * atk * dB * def * hp * pb * pc * adv * tc * tc * tc * tf * tf - 4 * atk * dB * def * hp * pb * pc * adv * tc * tc * tf * tf
+                        + 4 * atk * dB * def * hp * pb * pf * adv * tc * tc * tc * tc * tf - 4 * atk * dB * def * hp * pb * pf * adv * tc * tc * tc * tf
+                        + dB * dB * def * def * hp * hp * pb * pb * tc * tc * tc * tc * tf * tf
+                        + 2 * dB * dB * def * def * hp * hp * pb * pb * tc * tc * tc * tf * tf
+                        + dB * dB * def * def * hp * hp * pb * pb * tc * tc * tf * tf
+                        - 32 * dB * def * def * hp * hp * pb * tc * tc * tc * tf * tf) + 2 * atk * pf * adv * tc * tc
+                        - dB * def * hp * pb * tc * tf + dB * def * hp * pb * tc * tc * tf) / (2 * dB * def * hp * pb * tc * tf));
+                L12 = Math.min(length1, length2);
+            }
+            //Region 16
+            if (n == 13) {
+                L13 = (int) Math.floor((2 * def * hp * tc * tf) / (atk * pc * adv * tf + atk * pf * adv * tc));
+            }
         }
-        //Region 5
-        if (atkStage >= 0 && atkStage <= 4 && defStage > 4) {
-            double a = atk*dA*pa*pf*tc + atk*dA*pa*pc*tf;
-            double b = - atk*dA*pa*pf*tc*tc - atk*dA*pa*pc*tc*tf + atk*dA*pa*pf*tc + atk*dA*pa*pc*tf;
-            double c =  - atk*dA*pa*pf*tc*tc - atk*dA*pa*pc*tc*tf + 8*atk*pf*tc*tc + 8*atk*pc*tc*tf;
-            double d = - 32*def*hp*tc*tc*tf;
-            Solve solver = new Solve(d, c, b, a);
-            length = solver.getSolution();
-        }
-        //Region 7
-        if (atkStage >= 0 && atkStage <= 4 && defStage > -4 && defStage < 0) {
-            double a = atk*dA*pa*pf*tc + atk*dA*pa*pc*tf;
-            double b = - atk*dA*pa*pf*tc*tc - atk*dA*pa*pc*tc*tf + atk*dA*pa*pf*tc + atk*dA*pa*pc*tf;
-            double c = - atk*dA*pa*pf*tc*tc - atk*dA*pa*pc*tc*tf + 8*atk*pf*tc*tc + 8*atk*pc*tc*tf;
-            double d = - 8*def*hp*tc*tc*tf;
-            Solve solver = new Solve(d, c, b, a);
-            length = solver.getSolution();
 
+        int lmin = L1;
+        int[] L2toL13noLseven = {L2, L3, L4, L5, L6, L8, L9, L10, L11, L12, L13};
+        for (int i = 0; i < 11; i++) {
+            if (lmin > L2toL13noLseven[i]) {
+                lmin = L2toL13noLseven[i];
+            }
         }
-        //Region 8
-        if (atkStage >= 0 && atkStage <= 4 && defStage <= -4) {
-            double a = atk*dA*pa*pf*tc + atk*dA*pa*pc*tf;
-            double b = - atk*dA*pa*pf*tc*tc - atk*dA*pa*pc*tc*tf + atk*dA*pa*pf*tc + atk*dA*pa*pc*tf;
-            double c = - atk*dA*pa*pf*tc*tc - atk*dA*pa*pc*tc*tf + 8*atk*pf*tc*tc + 8*atk*pc*tc*tf;
-            double d = - 8*def*hp*tc*tc*tf;
-            Solve solver = new Solve(d, c, b, a);
-            length = solver.getSolution();
-        }
-        //Region 15
-        if (atkStage <= -4 && defStage <= -4) {
-            double a = atk*dB*pb*pf*tc + atk*dB*pb*pc*tf;
-            double b = - atk*dB*pb*pf*tc*tc - atk*dB*pb*pc*tc*tf + atk*dB*pb*pf*tc + atk*dB*pb*pc*tf;
-            double c = - atk*dB*pb*pf*tc*tc - atk*dB*pb*pc*tc*tf - 8*atk*pf*tc*tc - 8*atk*pc*tc*tf;
-            double d = 32*def*hp*tc*tc*tf;
-            Solve solver = new Solve(d, c, b, a);
-            length = solver.getSolution();
-        }
-        //Where the equations for L don't need anything extra done
-        //Region 1
-        if (atkStage > 4 && defStage > 4) {length = (2*def*hp*tc*tf)/(atk*pc*tf + atk*pf*tc);}
-        //Region 2
-        if (atkStage > 4 && defStage >= 0 && defStage <= 4) {
-            int length1 = (int) Math.floor((Math.sqrt(64*Math.pow(atk,2)*Math.pow(pc,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    + 128*Math.pow(atk,2)*pc*pf*tc*Math.pow(tc,2)*tf + 64*Math.pow(atk,2)*Math.pow(pf,2)*Math.pow(tc,2)*Math.pow(tc,2)
-                    + 16*atk*dB*def*hp*pb*pc*tc*Math.pow(tc,2)*Math.pow(tf,2) - 16*atk*dB*def*hp*pb*pc*tc*tc*Math.pow(tf,2)
-                    + 16*atk*dB*def*hp*pb*pf*Math.pow(tc,2)*Math.pow(tc,2)*tf - 16*atk*dB*def*hp*pb*pf*Math.pow(tc,2)*tc*tf
-                    + Math.pow(dB,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pb,2)*Math.pow(tc,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    + 2*Math.pow(dB,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pb,2)*Math.pow(tc,2)*tc*Math.pow(tf,2)
-                    + Math.pow(dB,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pb,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    - 32*dB*Math.pow(def,2)*Math.pow(hp,2)*pb*Math.pow(tc,2)*tc*Math.pow(tf,2)) + 8*atk*pc*tc*tf
-                    + 8*atk*pf*tc*tc - dB*def*hp*pb*tc*tf + dB*def*hp*pb*tc*tc*tf) / (2*dB*def*hp*pb*tc*tf));
-            int length2 = (int) Math.floor((8*atk*pc*tc*tf - Math.sqrt(64*Math.pow(atk,2)*Math.pow(pc,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    + 128*Math.pow(atk,2)*pc*pf*tc*Math.pow(tc,2)*tf + 64*Math.pow(atk,2)*Math.pow(pf,2)*Math.pow(tc,2)*Math.pow(tc,2)
-                    + 16*atk*dB*def*hp*pb*pc*tc*Math.pow(tc,2)*Math.pow(tf,2) - 16*atk*dB*def*hp*pb*pc*tc*tc*Math.pow(tf,2)
-                    + 16*atk*dB*def*hp*pb*pf*Math.pow(tc,2)*Math.pow(tc,2)*tf - 16*atk*dB*def*hp*pb*pf*Math.pow(tc,2)*tc*tf
-                    + Math.pow(dB,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pb,2)*Math.pow(tc,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    + 2*Math.pow(dB,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pb,2)*Math.pow(tc,2)*tc*Math.pow(tf,2)
-                    + Math.pow(dB,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pb,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    - 32*dB*Math.pow(def,2)*Math.pow(hp,2)*pb*Math.pow(tc,2)*tc*Math.pow(tf,2)) + 8*atk*pf*tc*tc
-                    - dB*def*hp*pb*tc*tf + dB*def*hp*pb*tc*tc*tf) / (2*dB*def*hp*pb*tc*tf));
-            length = Math.min(length1, length2);
-        }
-        //Region 4
-        if (atkStage > 4 && defStage <= -4) {length = (def*hp*tc*tf)/(2*atk*pc*tf + 2*atk*pf*tc);}
-        //Region 9
-        if (atkStage > -4 && atkStage < 0 && defStage > 4) {
-            length = (int)-Math.floor((Math.sqrt(4*Math.pow(atk,2)*Math.pow(pc,2)*Math.pow(tc,2)*Math.pow(tf,2) + 8*Math.pow(atk,2)*
-                    pc*pf*tc*Math.pow(tc,2)*tf + 4*Math.pow(atk,2)*Math.pow(pf,2)*Math.pow(tc,2)*Math.pow(tc,2)
-                    - 4*atk*dA*def*hp*pa*pc*tc*Math.pow(tc,2)*Math.pow(tf,2) + 4*atk*dA*def*hp*pa*pc*tc*tc*Math.pow(tf,2)
-                    - 4*atk*dA*def*hp*pa*pf*Math.pow(tc,2)*Math.pow(tc,2)*tf + 4*atk*dA*def*hp*pa*pf*Math.pow(tc,2)*tc*tf
-                    + Math.pow(dA,2)*Math.pow(def,2)*Math.pow(hp,2) *Math.pow(pa,2)*Math.pow(tc,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    + 2*Math.pow(dA,2)*Math.pow(def,2) *Math.pow(hp,2)*Math.pow(pa,2)*Math.pow(tc,2)*tc*Math.pow(tf,2)
-                    + Math.pow(dA,2)*Math.pow(def,2) *Math.pow(hp,2)*Math.pow(pa,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    + 32*dA*Math.pow(def,2)*Math.pow(hp,2) *pa*Math.pow(tc,2)*tc*Math.pow(tf,2)) + 2*atk*pc*tc*tf
-                    + 2*atk*pf*tc*tc + dA*def*hp*pa*tc*tf - dA*def*hp*pa*tc*tc*tf) /(2*dA*def*hp*pa*tc*tf) -(2*atk*pc*tc*tf
-                    - Math.sqrt((4*Math.pow(atk,2)*Math.pow(pc,2)*Math.pow(tc,2)*Math.pow(tf,2) + 8*Math.pow(atk,2)*pc
-                    *pf*tc*Math.pow(tc,2)*tf + 4*Math.pow(atk,2)*Math.pow(pf,2)*Math.pow(tc,2)*Math.pow(tc,2)
-                    - 4*atk*dA*def*hp*pa*pc*tc*Math.pow(tc,2)*Math.pow(tf,2) + 4*atk*dA*def*hp*pa*pc*tc*tc*Math.pow(tf,2)
-                    - 4*atk*dA*def*hp*pa*pf*Math.pow(tc,2)*Math.pow(tc,2)*tf + 4*atk*dA*def*hp*pa*pf*Math.pow(tc,2)*tc*tf
-                    + Math.pow(dA,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pa,2)*Math.pow(tc,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    + 2*Math.pow(dA,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pa,2)*Math.pow(tc,2)*tc*Math.pow(tf,2)
-                    + Math.pow(dA,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pa,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    + 32*dA*Math.pow(def,2)*Math.pow(hp,2)*pa*Math.pow(tc,2)*tc*Math.pow(tf,2)) + 2*atk*pf*tc*tc
-                    + dA*def*hp*pa*tc*tf - dA*def*hp*pa*tc*tc*tf)/(2*dA*def*hp*pa*tc*tf)));
-        }
-        //Region 12
-        if (atkStage > -4 && atkStage < 0 && defStage <= -4) {
-            length = (int)-((Math.sqrt(64*Math.pow(atk,2)*Math.pow(pc,2)*Math.pow(tc,2)*Math.pow(tf,2) + 128*Math.pow(atk,2)*pc*pf*tc
-                    *Math.pow(tc,2)*tf + 64*Math.pow(atk,2)*Math.pow(pf,2)*Math.pow(tc,2)*Math.pow(tc,2) - 16*atk*dA*def
-                    *hp*pa*pc*tc*Math.pow(tc,2)*Math.pow(tf,2) + 16*atk*dA*def*hp*pa*pc*tc*tc*Math.pow(tf,2) - 16*atk*dA
-                    *def*hp*pa*pf*Math.pow(tc,2)*Math.pow(tc,2)*tf + 16*atk*dA*def*hp*pa*pf*Math.pow(tc,2)*tc*tf
-                    + Math.pow(dA,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pa,2)*Math.pow(tc,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    + 2*Math.pow(dA,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pa,2)*Math.pow(tc,2)*tc*Math.pow(tf,2)
-                    + Math.pow(dA,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pa,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    + 32*dA*Math.pow(def,2)*Math.pow(hp,2)*pa*Math.pow(tc,2)*tc*Math.pow(tf,2)) + 8*atk*pc*tc*tf + 8*atk*pf*tc*tc
-                    + dA*def*hp*pa*tc*tf - dA*def*hp*pa*tc*tc*tf)/(2*dA*def*hp*pa*tc*tf) -(8*atk*pc*tc*tf
-                    - Math.sqrt(64*Math.pow(atk,2)*Math.pow(pc,2)*Math.pow(tc,2)*Math.pow(tf,2) + 128*Math.pow(atk,2)*pc*pf*tc*Math.pow(tc,2)*tf
-                    + 64*Math.pow(atk,2)*Math.pow(pf,2)*Math.pow(tc,2)*Math.pow(tc,2) - 16*atk*dA*def*hp*pa*pc*tc*Math.pow(tc,2)
-                    *Math.pow(tf,2) + 16*atk*dA*def*hp*pa*pc*tc*tc*Math.pow(tf,2) - 16*atk*dA*def*hp*pa*pf*Math.pow(tc,2)*Math.pow(tc,2)*tf
-                    + 16*atk*dA*def*hp*pa*pf*Math.pow(tc,2)*tc*tf + Math.pow(dA,2)*Math.pow(def,2)*Math.pow(hp,2)
-                    *Math.pow(pa,2)*Math.pow(tc,2)*Math.pow(tc,2)*Math.pow(tf,2) + 2*Math.pow(dA,2)*Math.pow(def,2)
-                    *Math.pow(hp,2)*Math.pow(pa,2)*Math.pow(tc,2)*tc*Math.pow(tf,2) + Math.pow(dA,2)*Math.pow(def,2)
-                    *Math.pow(hp,2)*Math.pow(pa,2)*Math.pow(tc,2)*Math.pow(tf,2) + 32*dA*Math.pow(def,2)*Math.pow(hp,2)
-                    *pa*Math.pow(tc,2)*tc*Math.pow(tf,2)) + 8*atk*pf*tc*tc + dA*def*hp*pa*tc*tf - dA*def*hp*pa*tc*tc*tf)/(2*dA*def*hp*pa*tc*tf));
-        }
-        //Region 13
-        if (atkStage <= -4 && defStage > 4) {
-            length = (int)Math.floor((8*def*hp*tc*tf)/(double)(atk*pc*tf + atk*pf*tc));
-        }
-        //Region 14
-        if (atkStage <= -4 && defStage >= 0 && defStage <= 4) {
-            int length1 = (int)Math.floor((Math.sqrt(4*Math.pow(atk,2)*Math.pow(pc,2)*Math.pow(tc,2)*Math.pow(tf,2) + 8*Math.pow(atk,2)*pc*pf*tc*Math.pow(tc,2)*tf
-                    + 4*Math.pow(atk,2)*Math.pow(pf,2)*Math.pow(tc,2)*Math.pow(tc,2) + 4*atk*dB*def*hp*pb*pc*tc*Math.pow(tc,2)*Math.pow(tf,2)
-                    - 4*atk*dB*def*hp*pb*pc*tc*tc*Math.pow(tf,2) + 4*atk*dB*def*hp*pb*pf*Math.pow(tc,2)*Math.pow(tc,2)*tf
-                    - 4*atk*dB*def*hp*pb*pf*Math.pow(tc,2)*tc*tf + Math.pow(dB,2)*Math.pow(def,2)*Math.pow(hp,2)
-                    *Math.pow(pb,2)*Math.pow(tc,2)*Math.pow(tc,2)*Math.pow(tf,2) + 2*Math.pow(dB,2)*Math.pow(def,2)
-                    *Math.pow(hp,2)*Math.pow(pb,2)*Math.pow(tc,2)*tc*Math.pow(tf,2) + Math.pow(dB,2)*Math.pow(def,2)
-                    *Math.pow(hp,2)*Math.pow(pb,2)*Math.pow(tc,2)*Math.pow(tf,2) - 32*dB*Math.pow(def,2)*Math.pow(hp,2)
-                    *pb*Math.pow(tc,2)*tc*Math.pow(tf,2)) + 2*atk*pc*tc*tf + 2*atk*pf*tc*tc - dB*def*hp*pb*tc*tf
-                    + dB*def*hp*pb*tc*tc*tf)/(2*dB*def*hp*pb*tc*tf));
-            int length2 = (int)((2*atk*pc*tc*tf - Math.sqrt(4*Math.pow(atk,2)*Math.pow(pc,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    + 8*Math.pow(atk,2)*pc*pf*tc*Math.pow(tc,2)*tf + 4*Math.pow(atk,2)*Math.pow(pf,2)*Math.pow(tc,2)*Math.pow(tc,2)
-                    + 4*atk*dB*def*hp*pb*pc*tc*Math.pow(tc,2)*Math.pow(tf,2) - 4*atk*dB*def*hp*pb*pc*tc*tc*Math.pow(tf,2)
-                    + 4*atk*dB*def*hp*pb*pf*Math.pow(tc,2)*Math.pow(tc,2)*tf - 4*atk*dB*def*hp*pb*pf*Math.pow(tc,2)*tc*tf
-                    + Math.pow(dB,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pb,2)*Math.pow(tc,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    + 2*Math.pow(dB,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pb,2)*Math.pow(tc,2)*tc*Math.pow(tf,2)
-                    + Math.pow(dB,2)*Math.pow(def,2)*Math.pow(hp,2)*Math.pow(pb,2)*Math.pow(tc,2)*Math.pow(tf,2)
-                    - 32*dB*Math.pow(def,2)*Math.pow(hp,2)*pb*Math.pow(tc,2)*tc*Math.pow(tf,2)) + 2*atk*pf*tc*tc
-                    - dB*def*hp*pb*tc*tf + dB*def*hp*pb*tc*tc*tf)/(2*dB*def*hp*pb*tc*tf));
-            length = Math.min(length1, length2);
-        }
-        //Region 16
-        if (atkStage <= -4 && defStage <= -4) {
-            length = (int) Math.floor((2*def*hp*tc*tf)/(double)(atk*pc*tf + atk*pf*tc));
-        }
-        return length;
+        return lmin;
     }
 
     public static String[] stringToArray(String str) {
@@ -755,5 +673,4 @@ public class PvPTest {
         String noBrackets = str.substring(1, str.length() - 1);
         return noBrackets.split(", ");
     }
-
 }
