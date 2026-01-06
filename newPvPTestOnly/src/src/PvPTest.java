@@ -137,6 +137,7 @@ public class PvPTest {
             String type1 = pokeTypes.get(i), type2 = "null";
             if (type1.contains(", ")) {
                 String[] typesArray = type1.split(", ");
+                Arrays.sort(typesArray);
                 type1 = typesArray[0];
                 type2 = typesArray[1];
             }
@@ -674,4 +675,5 @@ public class PvPTest {
         return noBrackets.split(", ");
     }
 }
+
 
