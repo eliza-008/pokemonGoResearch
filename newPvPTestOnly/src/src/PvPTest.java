@@ -253,12 +253,12 @@ public class PvPTest {
                                             if (pokeIndex2 < 18) {
                                                 typeAdv *= typeAdvs[pokeIndex2][k1];
                                             }
-                                            double dpt_f = poke.attack * fast.power * typeAdv * (f_STAB / 2)
+                                            double dpt_f = Math.floor(poke.attack * fast.power * typeAdv * (f_STAB / 2))
                                                     + 1;
                                             dpt += dpt_f;
                                             double dpt_c1, dpt_c2;
-                                            double dmg_c1 = poke.attack * charged1.power * typeAdv * (c1_STAB / 2) + 0.5;
-                                            double dmg_c2 = poke.attack * charged2.power * typeAdv * (c2_STAB / 2) + 0.5;
+                                            double dmg_c1 = Math.floor(poke.attack * charged1.power * typeAdv * (c1_STAB / 2)) + 1;
+                                            double dmg_c2 = Math.floor(poke.attack * charged2.power * typeAdv * (c2_STAB / 2)) + 1;
                                             if (charged1.cost == 100) {
                                                 dpt_c1 = (1 / (Math.ceil(charged1.cost / (double) fast.energyGen) * fast.turns))
                                                         * dmg_c1;
@@ -674,3 +674,4 @@ public class PvPTest {
         return noBrackets.split(", ");
     }
 }
+
